@@ -133,3 +133,12 @@ Open Source – Using Open Source Tools
 - RTV 80 Inverted V.
 
 ![All Band Adjustable Dipole](Collateral/25.%20%20Similar-Designs.png)
+
+
+# Finished Product and APP!
+- Antenna Winch on Tripod Mount.
+  - Also can use a 1 inch pole mount accesory.
+- Node-Red Dashboard APP.  On Pixel 3 (Medium sized phone).
+
+![All Band Adjustable Dipole](/27.%20%20Winch-and-APP-BlueBG-Small.png)
+
