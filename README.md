@@ -109,7 +109,8 @@ Open Source – Using Open Source Tools
 
 
 
-# Brush Cartridges in place (almost) with Pole Mount and Balun Housing in place.
+# Brush Cartridges in place (almost) with Pole Mount and Balun Housing in place.  
+- Housing pushed in to show brush carts better!
 
 ![All Band Adjustable Dipole](Collateral/24.%20%20Brush-Carts-and-Pole-Mount.png)
 
