@@ -6,10 +6,13 @@ Uses a Web-Based APP to set Element Lengths
 Robust support for CAT and other Automation
 Open Source – Using Open Source Tools
 
+# Finished Product and APP!
+- Antenna Winch on Tripod Mount.
+  - Also can use a 1 inch pole mount accesory.
+- Node-Red Dashboard APP.  On Pixel 3 (Medium sized phone).
 
-## Fully Functional Prototype:
+![All Band Adjustable Dipole](Collateral/27.%20%20Winch-and-APP-BlueBG-Small.png)
 
-![All Band Adjustable Dipole](Collateral/2.%20%20Assembled%20Working%20System.png)
 
 
 ##### Inspiration
@@ -135,10 +138,7 @@ Open Source – Using Open Source Tools
 ![All Band Adjustable Dipole](Collateral/25.%20%20Similar-Designs.png)
 
 
-# Finished Product and APP!
-- Antenna Winch on Tripod Mount.
-  - Also can use a 1 inch pole mount accesory.
-- Node-Red Dashboard APP.  On Pixel 3 (Medium sized phone).
+# Winch / Controller Closup.
 
-![All Band Adjustable Dipole](Collateral/27.%20%20Winch-and-APP-BlueBG-Small.png)
+![All Band Adjustable Dipole](Collateral/2.%20%20Assembled%20Working%20System.png)
 
