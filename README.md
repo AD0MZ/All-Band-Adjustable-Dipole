@@ -41,7 +41,7 @@ Tools Used:
   - Wifi-Stepper Controller:  As a beginner with stepper control, and wanting advanced feactures like acceleration and crash detection.
     - The Wifi Stepper removes the comlexity and provides a few simple interaces.  HTML, Bash, and Mqtt.
 
-[All Band Adjustable Dipole](Collateral/1.%20%20Initial%20Concept.png)
+![All Band Adjustable Dipole](Collateral/1.%20%20Initial%20Concept.png)
 
 
 
