@@ -82,7 +82,7 @@ Open Source – Using Open Source Tools
 ![All Band Adjustable Dipole](Collateral/11.%20Production%20Assembly%20Exploded.png)
 
 
-# VNA at 13Mhz to 15Mhz when tuned to 14.220 Mhz
+# VNA (un-calibrated :-)  ) scanning 13Mhz to 15Mhz when antenna is tuned to 14.220 Mhz
 
 ![All Band Adjustable Dipole](Collateral/10.%20VNA%20-%20Antenna%20Tuned%20to%2014.220.jpg)
 
