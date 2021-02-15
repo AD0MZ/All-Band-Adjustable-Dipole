@@ -1,4 +1,4 @@
-# All-Band-APP-Adjustable-Dipole
+# All-Band-Adjustable-Dipole
 ### Motorized 10-80 Meter Adjustable Dipole 
 
 A Self-Contained – Motorized Dipole Antenna System
