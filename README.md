@@ -128,8 +128,8 @@ Open Source – Using Open Source Tools
 
 
 # Similar Antennas / Prior Work
-- Collins 637t-1
-- Off Center Fed Clothsline
-- RTV 80 Inverted V
+- Collins 637t-1.
+- Center Adjsutable Folded Clothsline Dipole.
+- RTV 80 Inverted V.
 
 ![All Band Adjustable Dipole](Collateral/25.%20%20Similar-Designs.png)
