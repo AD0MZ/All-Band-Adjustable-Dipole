@@ -52,3 +52,10 @@ Open Source – Using Open Source Tools
 
 
 
+# Animation of Kinematics
+### Note that the wire (end at red dot) is wound out as a thin rope (Braided 60lb Fishing Line) is wound in (and in reverse).
+
+![All Band Adjustable DIpole](Collateral/3.%20%20(Best%20Explaination!)%20System-Animated.mov)
+
+
+
