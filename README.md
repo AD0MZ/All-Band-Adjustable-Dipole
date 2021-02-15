@@ -1,5 +1,5 @@
 # All-Band-APP-Adjustable-Dipole
-# Motorized 10-80 Meter Adjustable Dipole - (Under Construction, Useless Right Now.
+### Motorized 10-80 Meter Adjustable Dipole - (Under Construction, Useless Right Now.
 
 A Self-Contained – Motorized Dipole Antenna System
 Uses a Web-Based APP to set Element Lengths
@@ -36,3 +36,8 @@ Tried FreeCad, but found it combersome.  (Tried others, but like the program-lik
 TurboCad.  Useful for initial 2D design to get precise measurements.
 Wifi-Stepper Controller:  As a beginner with stepper control, and wanting advanced feactures like acceleration and crash detection.
 The Wifi Stepper removes the comlexity and provides a few simple interaces.  HTML, Bash, and Mqtt.
+
+![All Band Adjustable Dipole](https://github.com/AD0MZ/All-Band-APP-Adjustable-Dipole/blob/main/Collateral/1.%20%20Initial%20Concept.png)
+
+
+
