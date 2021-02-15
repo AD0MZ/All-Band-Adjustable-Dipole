@@ -4,7 +4,7 @@ This is my first OpenSCAD project, so I learned as I went.
 
 The topmost capstan parts were the first to be modeled, working towards the bearing plate, and the back up to the motor mount.
 - I hope to redo them all to be more "paramterized" and more modular.  (Lots of spaghetti code on some...)  
-  - Will go thought them as time permits and improve the comments as well.
+  - Will go though them as time permits and improve the comments as well.
   
 - My workflow...  (Some not implemented yet  :-)   )
   - Draw the proposed system in 2D using TurboCad to get good measurements and to help visualize.
