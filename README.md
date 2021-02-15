@@ -1,5 +1,5 @@
 # All-Band-APP-Adjustable-Dipole
-### Motorized 10-80 Meter Adjustable Dipole - (Under Construction, Useless Right Now.
+### Motorized 10-80 Meter Adjustable Dipole - (Under Construction, Useless Right Now.)
 
 A Self-Contained – Motorized Dipole Antenna System
 Uses a Web-Based APP to set Element Lengths
