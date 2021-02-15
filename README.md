@@ -84,7 +84,7 @@ Open Source – Using Open Source Tools
 
 
 # First Printed Parts
-### Note:  First 3Dp project! Trying different things.
+### Note:  First 3DP project! Trying different things.
 
 ![All Band Adjustable Dipole](Collateral/15.%20%20Parts%20Laid%20Out.JPG)
 
