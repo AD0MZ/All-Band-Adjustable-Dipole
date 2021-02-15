@@ -59,3 +59,10 @@ Open Source – Using Open Source Tools
 
 
 
+
+# Animation of a Sample Application.  (Node-Red Dashboard)
+
+- The Flow lets the user select a band, then fine adjust it.  
+  - A simple function calcuates steps via simple math, and sends an absolute position to the motor. 
+  
+![All Band Adjustable DIpole](/6.%20%20Application%20Operation.mov)
