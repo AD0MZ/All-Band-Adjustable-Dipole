@@ -6,7 +6,7 @@ Uses a Web-Based APP to set Element Lengths
 Robust support for CAT and other Automation
 Open Source – Using Open Source Tools
 
-![All Band Adjustable Dipole](/12.%20%20Assembly%20Cutaway.png)
+![All Band Adjustable Dipole](Collateral/12.%20%20Assembly%20Cutaway.png)
 
 ##### Inspiration
   - Interested in Antenna Physics since High School.
