@@ -6,7 +6,11 @@ Uses a Web-Based APP to set Element Lengths
 Robust support for CAT and other Automation
 Open Source – Using Open Source Tools
 
+
+## Working Prototype:
+
 ![All Band Adjustable Dipole](Collateral/2.%20%20Assembled%20Working%20System.png)
+
 
 ##### Inspiration
   - Interested in Antenna Physics since High School.
@@ -42,6 +46,8 @@ Tools Used:
   - TurboCad.  Useful for initial 2D design to get precise measurements.
   - Wifi-Stepper Controller:  As a beginner with stepper control, and wanting advanced feactures like acceleration and crash detection.
     - The Wifi Stepper removes the comlexity and provides a few simple interaces.  HTML, Bash, and Mqtt.
+
+# Initial Concept:
 
 ![All Band Adjustable Dipole](Collateral/1.%20%20Initial%20Concept.png)
 
