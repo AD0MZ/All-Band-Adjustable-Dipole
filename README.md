@@ -90,11 +90,11 @@ Open Source – Using Open Source Tools
 
 
 # Brush Cartridge
-### External for easy replacement.
-###    - Wires from balun or coax connect to cartridge only.  (Hole in bottom)
-####    - Option base can house a balun or other gear, wire feeds at base to prevent water ingress.
+- External for easy replacement.
+  - Wires from balun or coax connect to cartridge only.  (Hole in bottom)
+  - Optional base can house a balun or other gear, wire feeds through botton of both parts to prevent water ingress.
 
-
+![All Band Adjustable Dipole](Collateral/17.%20%20Cart%20Compared%20to%20Brush.JPG)
 
 
 
