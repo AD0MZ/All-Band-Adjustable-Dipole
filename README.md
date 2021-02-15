@@ -75,12 +75,14 @@ Open Source – Using Open Source Tools
 # Cutaway view of Internal Capstan Parts.
 
 - Bom:
-  - (1) 8x22 MM scateboard boaring
-  - Assorted M3 screws and some thin sqaure M3 nuts.
-  - (2) Generic (Makita in my case) power tool brushes.
+  - (1) 8x22x7 MM sealed scateboard boaring
+  - Assorted M3 screws and 16 thin sqaure M3 nuts.
+  - (2) Generic (Makita CB-303 in my case) power tool brushes.
   - ~130 feet of 18 guage tinned (less oxidation) wire.
   - ~ 260 feet of nylon or dacron 60lb test fishing line.
   - (4) pulleys (you can print them too), and some rope.
+  - (2) 4mm x .5mm x 30mm copper strips.  (Wire guide slide surfaces.)
+  
   - Time to print:  ~40 hours.
   
 ![All Band Adjustable Dipole](Collateral/11.%20Production%20Assembly%20Exploded.png)
