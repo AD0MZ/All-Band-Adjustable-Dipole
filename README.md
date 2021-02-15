@@ -15,7 +15,7 @@ Open Source – Using Open Source Tools
 ##### Inspiration
   - Interested in Antenna Physics since High School.
     - Particularly the concepts of Gain and Directivity when considering conservation of energy.
-      - Also interested in how Resonance and SWR affect Efficient Radiation.
+  - Recently interested in how Resonance and SWR affect Efficient Radiation.
   - Was surprised at how much better a friend’s antenna performed after a slight pruning.
     - We both noted how much better his dipole worked comparted to his G5RV or his HexBeam Spiderweb.
   - Began thinking of an “automatic” self-pruning-dipole.
@@ -55,7 +55,7 @@ Open Source – Using Open Source Tools
 # Animation of Kinematics
 ### Note that the wire (end at red dot) is wound out as a thin rope (Braided 60lb Fishing Line) is wound in (and in reverse).
 
-![All Band Adjustable DIpole](Collateral/3.%20%20(Best%20Explaination!)%20System-Animated.mov)
+![All Band Adjustable Dipole](Collateral/3.%20%20(Best%20Explaination!)%20System-Animated.mov)
 
 
 
@@ -65,4 +65,4 @@ Open Source – Using Open Source Tools
 - The Flow lets the user select a band, then fine adjust it.  
   - A simple function calcuates steps via simple math, and sends an absolute position to the motor. 
   
-![All Band Adjustable DIpole](/6.%20%20Application%20Operation.mov)
+![All Band Adjustable Dipole](Collateral/6.%20%20Application%20Operation.mov)
