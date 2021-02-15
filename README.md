@@ -133,12 +133,3 @@ Open Source – Using Open Source Tools
 - RTV 80 Inverted V
 
 ![All Band Adjustable Dipole](Collateral/25.%20%20Similar-Designs.png)
-
-
-# Video of Wires goin out, thin rope goin in!
-
-![All Band Adjustable Dipole](Collateral/7.%20%20Wire%20Out%20-%20String%20In.mov)
-
-
-
-  
