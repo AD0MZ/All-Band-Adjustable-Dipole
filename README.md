@@ -6,7 +6,7 @@ Uses a Web-Based APP to set Element Lengths
 Robust support for CAT and other Automation
 Open Source – Using Open Source Tools
 
-#####Inspiration
+##### Inspiration
   Interested in Antenna Physics since High School.
     Particularly the concepts of Gain and Directivity when considering  conservation of energy.
   Also interested in how Resonance and SWR  affect Efficient Radiation.
@@ -14,12 +14,12 @@ Open Source – Using Open Source Tools
     We both noted how much better his dipole worked comparted to his G5RV or his HexBeam Spiderweb.
   Began thinking of an “automatic” self-pruning-dipole.
   
-#####Hangar Door Openers!  
+##### Hangar Door Openers!  
   Realized that a creatively constructed “Capstan” combined with a clothesline-like element geometry would simplify the mechanics.
     Airplane hangar door openers use a wire and drum geometry, and are the mechanical inspiration for the prototypes.
     Needed a good Winter Project during “Covid - Stay at home”.
 
-#####Learning from Those That Have Gone Before.
+##### Learning from Those That Have Gone Before.
   Article by AE4YW – Radiation is more important than SWR.
   The RTV 80 by W4QJP and KC4TAQ  is a proven example of a complete adjustable system (But manually operated with adjustable ropes).
   VA2ERY used a literal incarnation of a clothesline to move the feed-point of a folded dipole.
