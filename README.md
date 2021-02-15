@@ -71,20 +71,20 @@ Open Source – Using Open Source Tools
 # Cutaway view of Internal Capstan Parts.
 
 - Bom:
-  - 8x22 MM scateboard boaring
-  - Assorted M3 screws and some thin sqaure M3 nuts
-  - 2 Generic (Makita in my case) power tool brushes
-  - ~130 feet of 18 guage tinned (less oxidation) wire
-  - ~ 260 feet of nylon or dacron 60lb test fishing line
-  - 4 pulleys (you can print them too), and some rope
-  - Time to print:  ~40 hours
+  - (1) 8x22 MM scateboard boaring
+  - Assorted M3 screws and some thin sqaure M3 nuts.
+  - (2) Generic (Makita in my case) power tool brushes.
+  - ~130 feet of 18 guage tinned (less oxidation) wire.
+  - ~ 260 feet of nylon or dacron 60lb test fishing line.
+  - (4) pulleys (you can print them too), and some rope.
+  - Time to print:  ~40 hours.
   
 ![All Band Adjustable Dipole](Collateral/11.%20Production%20Assembly%20Exploded.png)
 
 
 # VNA at 13Mhz to 15Mhz when tuned to 14.220 Mhz
 
-
+![All Band Adjustable Dipole](Collateral/10.%20VNA%20-%20Antenna%20Tuned%20to%2014.220.jpg)
 
 
   
