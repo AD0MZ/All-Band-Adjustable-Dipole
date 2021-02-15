@@ -73,7 +73,7 @@ Open Source – Using Open Source Tools
 ![All Band Adjustable Dipole](Collateral/6.%20%20Application%20Operation.mov)
 
 
-- Bom:
+# Bom:
   - (1) 8x22x7 MM sealed scateboard boaring
   - Assorted M3 screws and 16 thin sqaure M3 nuts.
   - (2) Generic (Makita CB-303 in my case) power tool brushes.
