@@ -19,9 +19,8 @@ Open Source – Using Open Source Tools
   - Was surprised at how much better a friend’s antenna performed after a slight pruning.
     - We both noted how much better his dipole worked comparted to his G5RV or his HexBeam Spiderweb.
   - Began thinking of an “automatic” self-pruning-dipole.
-  
-##### Hangar Door Openers!  
-  - Realized that a creatively constructed “Capstan” combined with a clothesline-like element geometry would simplify the mechanics.
+  - Hangar Door Openers!  
+    - Realized that a creatively constructed “Capstan” combined with a clothesline-like element geometry would simplify the mechanics.
     - Airplane hangar door openers use a wire and drum geometry, and are the mechanical inspiration for the prototypes.
   - Needed a good Winter Project during “Covid - Stay at home”.
 
