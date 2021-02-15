@@ -40,7 +40,7 @@ Open Source – Using Open Source Tools
 #### Status:  Two protoypes contructed and tested.  
   - Ready for constructive input and suggestions for improvment.  (More weatherproof?  Better / Simpler Stepper Control?  Etc?)
 
-**Disclaimer:  I am a beginner with the tools I chose for this project, so it's as much a learning process and a productino process.
+**Disclaimer:  I am a beginner with the tools I chose for this project, so it's as much a learning process and a production process.
 
 #### Tools Used:
   - OpenSCAD.  Wanted to learn it.  Experienced TurboCad Deluxe user, but it lacks proper 3D tools.
