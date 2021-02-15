@@ -7,7 +7,7 @@ Robust support for CAT and other Automation
 Open Source – Using Open Source Tools
 
 
-## Working Prototype:
+## Fully Functional Prototype:
 
 ![All Band Adjustable Dipole](Collateral/2.%20%20Assembled%20Working%20System.png)
 
