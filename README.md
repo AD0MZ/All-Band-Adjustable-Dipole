@@ -8,7 +8,7 @@ Open Source – Using Open Source Tools
 
 # Finished Product and APP!
 - Antenna Winch on Tripod Mount.
-  - Also can use a 1 inch pole mount accesory.
+  - Can Hang From a Rope or Use the Pole Mount Accesory.
 - Node-Red Dashboard APP.  On Pixel 3 (Medium sized phone).
 
 ![All Band Adjustable Dipole](Collateral/27.%20%20Winch-and-APP-BlueBG-Small.png)
