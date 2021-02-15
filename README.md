@@ -52,6 +52,8 @@ Open Source – Using Open Source Tools
 
 
 
+
+
 # Animation of Kinematics
 ### Note that the wire (end at red dot) is wound out as a thin rope (Braided 60lb Fishing Line) is wound in (and in reverse).
 
@@ -66,6 +68,8 @@ Open Source – Using Open Source Tools
   - A simple function calcuates steps via simple math, and sends an absolute position to the motor. 
   
 ![All Band Adjustable Dipole](Collateral/6.%20%20Application%20Operation.mov)
+
+
 
 
 # Cutaway view of Internal Capstan Parts.
@@ -83,10 +87,15 @@ Open Source – Using Open Source Tools
 
 
 
+
+
 # First Printed Parts
 ### Note:  First 3DP project! Trying different things.
 
 ![All Band Adjustable Dipole](Collateral/15.%20%20Parts%20Laid%20Out.JPG)
+
+
+
 
 
 # Brush Cartridge
@@ -95,6 +104,12 @@ Open Source – Using Open Source Tools
   - Optional base can house a balun or other gear, wire feeds through botton of both parts to prevent water ingress.
 
 ![All Band Adjustable Dipole](Collateral/17.%20%20Cart%20Compared%20to%20Brush.JPG)
+
+
+
+
+# Brush Cartridges in place (almost) with Pole Mount and Balun Housing in place.
+
 
 
 
