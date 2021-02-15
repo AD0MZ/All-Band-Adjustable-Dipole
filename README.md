@@ -6,29 +6,33 @@ Uses a Web-Based APP to set Element Lengths
 Robust support for CAT and other Automation
 Open Source – Using Open Source Tools
 
-Inspiration
-Interested in Antenna Physics since High School.
-Particularly the concepts of Gain and Directivity when considering  conservation of energy.
-Also interested in how Resonance and SWR  affect Efficient Radiation.
-Was surprised at how much better a friend’s antenna performed after a slight pruning.
-We both noted how much better his dipole worked comparted to his G5RV or his HexBeam Spiderweb.
-Began thinking of an “automatic” self-pruning-dipole.
-Hangar Door Openers!  Realized that a creatively constructed “Capstan” combined with a clothesline-like element geometry would simplify the mechanics.
-Airplane hangar door openers use a wire and drum geometry, and are the mechanical inspiration for the prototypes.
-Needed a good Winter Project during “Covid - Stay at home”.
+#####Inspiration
+  Interested in Antenna Physics since High School.
+    Particularly the concepts of Gain and Directivity when considering  conservation of energy.
+  Also interested in how Resonance and SWR  affect Efficient Radiation.
+  Was surprised at how much better a friend’s antenna performed after a slight pruning.
+    We both noted how much better his dipole worked comparted to his G5RV or his HexBeam Spiderweb.
+  Began thinking of an “automatic” self-pruning-dipole.
+  
+#####Hangar Door Openers!  
+  Realized that a creatively constructed “Capstan” combined with a clothesline-like element geometry would simplify the mechanics.
+    Airplane hangar door openers use a wire and drum geometry, and are the mechanical inspiration for the prototypes.
+    Needed a good Winter Project during “Covid - Stay at home”.
 
-Learning from Those That Have Gone Before.
-Article by AE4YW – Radiation is more important than SWR.
-The RTV 80 by W4QJP and KC4TAQ  is a proven example of a complete adjustable system (But manually operated with adjustable ropes).
-VA2ERY used a literal incarnation of a clothesline to move the feed-point of a folded dipole.
-(Simple, but requires a balanced feedline and a tuner.)
-Collins Aerospace dual-drum winch for wire dipoles (Model 637-T1).
-SteppIr.  Very successful stepper motor controlled Yagi’s, etc.
-An automated – multi-element “Tape Measure” system if you look inside.
+#####Learning from Those That Have Gone Before.
+  Article by AE4YW – Radiation is more important than SWR.
+  The RTV 80 by W4QJP and KC4TAQ  is a proven example of a complete adjustable system (But manually operated with adjustable ropes).
+  VA2ERY used a literal incarnation of a clothesline to move the feed-point of a folded dipole.
+    (Simple, but requires a balanced feedline and a tuner.)
+  Collins Aerospace dual-drum winch for wire dipoles (Model 637-T1).
+  SteppIr.  Very successful stepper motor controlled Yagi’s, etc.
+    An automated – multi-element “Tape Measure” system if you look inside.
 
 
-Status:  Two protoypes contructed and tested.  Ready for constructive input and improvment.
-Disclaimer:  I am a beginner with the tools I chose for this project, so it's as much a learning process and a productino process.
+Status:  Two protoypes contructed and tested.  
+  Ready for constructive input and suggestions for improvment.  (More weatherproof?  Better / Simpler Stepper Control?  Etc?)
+
+**Disclaimer:  I am a beginner with the tools I chose for this project, so it's as much a learning process and a productino process.
 
 Tools Used:
 OpenSCAD.  Wanted to learn it.  Experienced TurboCad Deluxe user, but it lacks proper 3D tools.
