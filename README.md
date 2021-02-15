@@ -6,7 +6,7 @@ Uses a Web-Based APP to set Element Lengths
 Robust support for CAT and other Automation
 Open Source – Using Open Source Tools
 
-![OpenSCAD Assembled](collateral/12. Asssembly Cutaway.png)
+![OpenSCAD Assembled](Collateral/12.%20%20Asssembly%20 Cutaway.png)
 
 ##### Inspiration
   - Interested in Antenna Physics since High School.
