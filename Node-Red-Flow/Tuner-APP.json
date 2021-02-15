@@ -1,0 +1,4332 @@
+[
+    {
+        "id": "ae06bce3.51f69",
+        "type": "tab",
+        "label": "Tuner",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "efe94a83.ce8b58",
+        "type": "ui_button",
+        "z": "ae06bce3.51f69",
+        "name": "",
+        "group": "ae37dfa8.e0eaf",
+        "order": 6,
+        "width": 1,
+        "height": 1,
+        "passthru": true,
+        "label": "80 M",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "3750",
+        "payloadType": "num",
+        "topic": "",
+        "x": 270,
+        "y": 340,
+        "wires": [
+            [
+                "f3fc7815.288a38"
+            ]
+        ]
+    },
+    {
+        "id": "20f3c997.bc99c6",
+        "type": "ui_button",
+        "z": "ae06bce3.51f69",
+        "name": "",
+        "group": "ae37dfa8.e0eaf",
+        "order": 5,
+        "width": 1,
+        "height": 1,
+        "passthru": true,
+        "label": "40 M",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "7150",
+        "payloadType": "num",
+        "topic": "",
+        "x": 270,
+        "y": 300,
+        "wires": [
+            [
+                "f7c316ac.b24cc8"
+            ]
+        ]
+    },
+    {
+        "id": "6f3b801e.3df6a",
+        "type": "ui_button",
+        "z": "ae06bce3.51f69",
+        "name": "",
+        "group": "ae37dfa8.e0eaf",
+        "order": 4,
+        "width": 1,
+        "height": 1,
+        "passthru": true,
+        "label": "30 M",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "10130",
+        "payloadType": "num",
+        "topic": "",
+        "x": 270,
+        "y": 260,
+        "wires": [
+            [
+                "9e46a87b.cc5f98"
+            ]
+        ]
+    },
+    {
+        "id": "bf6b004d.22e5d8",
+        "type": "ui_button",
+        "z": "ae06bce3.51f69",
+        "name": "P 1",
+        "group": "ae37dfa8.e0eaf",
+        "order": 13,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{msg.payload}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "P1",
+        "payloadType": "str",
+        "topic": "",
+        "x": 110,
+        "y": 1500,
+        "wires": [
+            [
+                "a1bc0f75.1f99"
+            ]
+        ]
+    },
+    {
+        "id": "e0cc8a3c.ed38",
+        "type": "ui_slider",
+        "z": "ae06bce3.51f69",
+        "name": "Course Adj.",
+        "label": "Adjust",
+        "tooltip": "",
+        "group": "ae37dfa8.e0eaf",
+        "order": 9,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "outs": "all",
+        "topic": "",
+        "min": "140000",
+        "max": "143500",
+        "step": "10",
+        "x": 730,
+        "y": 140,
+        "wires": [
+            [
+                "f3477765.f8606",
+                "fd5bd8a7.8405c8"
+            ]
+        ]
+    },
+    {
+        "id": "4489b759.e839a8",
+        "type": "ui_button",
+        "z": "ae06bce3.51f69",
+        "name": "",
+        "group": "ae37dfa8.e0eaf",
+        "order": 11,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "label": "Set F Key",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "aqua",
+        "icon": "",
+        "payload": "Test",
+        "payloadType": "str",
+        "topic": "",
+        "x": 280,
+        "y": 940,
+        "wires": [
+            [
+                "eda80ed9.4b894"
+            ]
+        ]
+    },
+    {
+        "id": "4941aea5.baee58",
+        "type": "ui_text_input",
+        "z": "ae06bce3.51f69",
+        "name": "P (x) Label Field",
+        "label": "",
+        "tooltip": "",
+        "group": "ae37dfa8.e0eaf",
+        "order": 10,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": "0",
+        "topic": "",
+        "x": 920,
+        "y": 540,
+        "wires": [
+            [
+                "a65c3e5.291eac"
+            ]
+        ]
+    },
+    {
+        "id": "50b80906.ce2108",
+        "type": "ui_text",
+        "z": "ae06bce3.51f69",
+        "group": "ae37dfa8.e0eaf",
+        "order": 7,
+        "width": 4,
+        "height": 1,
+        "name": "TEXT (Freq.)",
+        "label": " Frequency",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 1190,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "f7c316ac.b24cc8",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ui_control.min",
+                "pt": "msg",
+                "to": "7000",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "ui_control.max",
+                "pt": "msg",
+                "to": "7300",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "ui_control.step",
+                "pt": "msg",
+                "to": "10",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 300,
+        "wires": [
+            [
+                "e0cc8a3c.ed38"
+            ]
+        ]
+    },
+    {
+        "id": "f3fc7815.288a38",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ui_control.min",
+                "pt": "msg",
+                "to": "3500",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "ui_control.max",
+                "pt": "msg",
+                "to": "4000",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "ui_control.step",
+                "pt": "msg",
+                "to": "10",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 340,
+        "wires": [
+            [
+                "e0cc8a3c.ed38"
+            ]
+        ]
+    },
+    {
+        "id": "9e46a87b.cc5f98",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ui_control.min",
+                "pt": "msg",
+                "to": "10100",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "ui_control.max",
+                "pt": "msg",
+                "to": "10150",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "ui_control.step",
+                "pt": "msg",
+                "to": "1",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 260,
+        "wires": [
+            [
+                "e0cc8a3c.ed38"
+            ]
+        ]
+    },
+    {
+        "id": "8de3ca50.1bd898",
+        "type": "ui_button",
+        "z": "ae06bce3.51f69",
+        "name": "Send to Motor",
+        "group": "ae37dfa8.e0eaf",
+        "order": 8,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "label": "Snd to Mtr",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "red",
+        "icon": "",
+        "payload": "motor_position",
+        "payloadType": "flow",
+        "topic": "",
+        "x": 300,
+        "y": 720,
+        "wires": [
+            [
+                "c91d216e.7102f8"
+            ]
+        ]
+    },
+    {
+        "id": "29bdac28.a98234",
+        "type": "inject",
+        "z": "ae06bce3.51f69",
+        "name": "Trig. For Testing",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 120,
+        "y": 1040,
+        "wires": [
+            [
+                "aa7be33a.da1878"
+            ]
+        ]
+    },
+    {
+        "id": "f3477765.f8606",
+        "type": "function",
+        "z": "ae06bce3.51f69",
+        "name": "Freq. = token * 1000",
+        "func": "msg.payload = msg.payload * 1000;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 940,
+        "y": 140,
+        "wires": [
+            [
+                "50b80906.ce2108",
+                "604fbce.0beab44"
+            ]
+        ]
+    },
+    {
+        "id": "d704f32f.3a1ec8",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "Ste,Min,Max,Payload",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ui_control.min",
+                "pt": "msg",
+                "to": "0",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "ui_control.max",
+                "pt": "msg",
+                "to": "0",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "ui_control.step",
+                "pt": "msg",
+                "to": "10",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "#:(file)::application_state",
+                "pt": "flow",
+                "to": "initialized",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "0",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 580,
+        "wires": [
+            [
+                "e0cc8a3c.ed38"
+            ]
+        ]
+    },
+    {
+        "id": "d23a21e4.39be18",
+        "type": "ui_button",
+        "z": "ae06bce3.51f69",
+        "name": "",
+        "group": "ae37dfa8.e0eaf",
+        "order": 2,
+        "width": 1,
+        "height": 1,
+        "passthru": true,
+        "label": "15 M",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "21220",
+        "payloadType": "num",
+        "topic": "",
+        "x": 270,
+        "y": 180,
+        "wires": [
+            [
+                "2e3a01e4.e7814e"
+            ]
+        ]
+    },
+    {
+        "id": "91a6b1e5.2c605",
+        "type": "ui_button",
+        "z": "ae06bce3.51f69",
+        "name": "",
+        "group": "ae37dfa8.e0eaf",
+        "order": 3,
+        "width": 1,
+        "height": 1,
+        "passthru": true,
+        "label": "20 M",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "14180",
+        "payloadType": "num",
+        "topic": "",
+        "x": 270,
+        "y": 220,
+        "wires": [
+            [
+                "39bdd5cc.f99cf2"
+            ]
+        ]
+    },
+    {
+        "id": "ebf90978.d40ab",
+        "type": "ui_button",
+        "z": "ae06bce3.51f69",
+        "name": "",
+        "group": "ae37dfa8.e0eaf",
+        "order": 1,
+        "width": 1,
+        "height": 1,
+        "passthru": true,
+        "label": "10 M",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "28850",
+        "payloadType": "num",
+        "topic": "",
+        "x": 270,
+        "y": 140,
+        "wires": [
+            [
+                "587362c8.9c44a4"
+            ]
+        ]
+    },
+    {
+        "id": "587362c8.9c44a4",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ui_control.min",
+                "pt": "msg",
+                "to": "28000",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "ui_control.max",
+                "pt": "msg",
+                "to": "29700",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "ui_control.step",
+                "pt": "msg",
+                "to": "10",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 140,
+        "wires": [
+            [
+                "e0cc8a3c.ed38"
+            ]
+        ]
+    },
+    {
+        "id": "2e3a01e4.e7814e",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ui_control.min",
+                "pt": "msg",
+                "to": "21000",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "ui_control.max",
+                "pt": "msg",
+                "to": "21450",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "ui_control.step",
+                "pt": "msg",
+                "to": "10",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 180,
+        "wires": [
+            [
+                "e0cc8a3c.ed38"
+            ]
+        ]
+    },
+    {
+        "id": "39bdd5cc.f99cf2",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ui_control.min",
+                "pt": "msg",
+                "to": "14000",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "ui_control.max",
+                "pt": "msg",
+                "to": "14350",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "ui_control.step",
+                "pt": "msg",
+                "to": "10",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 220,
+        "wires": [
+            [
+                "e0cc8a3c.ed38"
+            ]
+        ]
+    },
+    {
+        "id": "c6132f3a.5c1ce8",
+        "type": "ui_ui_control",
+        "z": "ae06bce3.51f69",
+        "d": true,
+        "name": "",
+        "events": "connect",
+        "x": 280,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4bac5434.420ba4",
+        "type": "inject",
+        "z": "ae06bce3.51f69",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 100,
+        "y": 140,
+        "wires": [
+            [
+                "ebf90978.d40ab"
+            ]
+        ]
+    },
+    {
+        "id": "3205f5.78173a0c",
+        "type": "inject",
+        "z": "ae06bce3.51f69",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 100,
+        "y": 220,
+        "wires": [
+            [
+                "91a6b1e5.2c605"
+            ]
+        ]
+    },
+    {
+        "id": "9a5b88a6.049118",
+        "type": "inject",
+        "z": "ae06bce3.51f69",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 100,
+        "y": 260,
+        "wires": [
+            [
+                "6f3b801e.3df6a"
+            ]
+        ]
+    },
+    {
+        "id": "428c84cd.715d54",
+        "type": "inject",
+        "z": "ae06bce3.51f69",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 100,
+        "y": 300,
+        "wires": [
+            [
+                "20f3c997.bc99c6"
+            ]
+        ]
+    },
+    {
+        "id": "7ea6ee04.33f008",
+        "type": "inject",
+        "z": "ae06bce3.51f69",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 100,
+        "y": 180,
+        "wires": [
+            [
+                "d23a21e4.39be18"
+            ]
+        ]
+    },
+    {
+        "id": "a6d7e7ba.ca77e",
+        "type": "inject",
+        "z": "ae06bce3.51f69",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 100,
+        "y": 340,
+        "wires": [
+            [
+                "efe94a83.ce8b58"
+            ]
+        ]
+    },
+    {
+        "id": "25c9b4e4.1e2354",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "Clear Entry Field",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 540,
+        "wires": [
+            [
+                "4941aea5.baee58"
+            ]
+        ]
+    },
+    {
+        "id": "a1bc0f75.1f99",
+        "type": "switch",
+        "z": "ae06bce3.51f69",
+        "name": "Set. Saved. Send",
+        "property": "#:(file)::button_function",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "set",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "saved",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "send",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 310,
+        "y": 1520,
+        "wires": [
+            [
+                "31fe8af9.c1dbce"
+            ],
+            [],
+            [
+                "4d13cc7b.9a111c"
+            ]
+        ]
+    },
+    {
+        "id": "31fe8af9.c1dbce",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "Store P1 as f.b_t",
+        "rules": [
+            {
+                "t": "set",
+                "p": "#:(file)::p_1_value",
+                "pt": "flow",
+                "to": "#:(file)::band_token",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "#:(file)::button_function",
+                "pt": "flow",
+                "to": "send",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 1280,
+        "wires": [
+            [
+                "18fd1cec.73e193"
+            ]
+        ]
+    },
+    {
+        "id": "4d13cc7b.9a111c",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "Send P1",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "#:(file)::p_1_value",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 620,
+        "y": 1520,
+        "wires": [
+            [
+                "d750a10d.c6bce"
+            ]
+        ]
+    },
+    {
+        "id": "a65c3e5.291eac",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "#:(file)::label_text",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1210,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "aa7be33a.da1878",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "set flow.button_function to send",
+        "rules": [
+            {
+                "t": "set",
+                "p": "#:(file)::button_function",
+                "pt": "flow",
+                "to": "send",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 510,
+        "y": 1040,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "eda80ed9.4b894",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "Set flow.button_function to set",
+        "rules": [
+            {
+                "t": "set",
+                "p": "#:(file)::button_function",
+                "pt": "flow",
+                "to": "set",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 570,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a462f487.072f28",
+        "type": "inject",
+        "z": "ae06bce3.51f69",
+        "name": "",
+        "topic": "",
+        "payload": "Avail - Home",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 110,
+        "y": 1120,
+        "wires": [
+            [
+                "6435805b.f1e73",
+                "bf6b004d.22e5d8",
+                "2e7e6916.bc9bde",
+                "ea9175bc.f5ca68",
+                "c466b20a.0b2328",
+                "e951c178.5d483",
+                "ae278745.ed0ee8",
+                "80d6382e.d5f2e",
+                "f9c98770.7a7ca",
+                "ebffe867.34ffd8"
+            ]
+        ]
+    },
+    {
+        "id": "2c320b8c.1b7fd4",
+        "type": "comment",
+        "z": "ae06bce3.51f69",
+        "name": "Min, Max, Step 4 Sliders (5 Hi DIgits)",
+        "info": "",
+        "x": 520,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "84543cd8.a6459",
+        "type": "http request",
+        "z": "ae06bce3.51f69",
+        "name": "Send URL to Motor",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": false,
+        "url": "http://172.16.0.230/api/motor/goto?pos={{{topic}}}",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 930,
+        "y": 860,
+        "wires": [
+            [
+                "dc61596c.36d4c"
+            ]
+        ]
+    },
+    {
+        "id": "1cfde75e.2525f9",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "create URL",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "#:(file)::motor_position",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 910,
+        "y": 800,
+        "wires": [
+            [
+                "84543cd8.a6459"
+            ]
+        ]
+    },
+    {
+        "id": "604fbce.0beab44",
+        "type": "function",
+        "z": "ae06bce3.51f69",
+        "name": "comp,set motor_position",
+        "func": "var frequency = msg.payload;\nvar velocity_factor = global.get (\"VELOCITY_FACTOR\",\"file\");\nvar stepsize = global.get (\"ANTENNA_STEPSIZE\",\"file\");\nvar fudge_factor = global.get (\"FUDGE_FACTOR\",\"file\");\nif (frequency === 0) \n    {flow.set (\"motor_position\" , 0 , \"file\");\n    return msg}\nvar motor_position = (Math.floor (((299792458 / frequency * 1000 * .25 * velocity_factor ) / stepsize) + fudge_factor));\n// c / f(m) * 1000 = l(mm)\n// Need 1/4 l per side so c / f(m) * 250 = l(mm)\n// Use global variable velocity_factor,stepsize, and fundge_factor for mechanical ratio\nflow.set ( \"motor_position\", motor_position,\"file\"); \nmsg.payload = motor_position\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1230,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "89cf929d.2e05d",
+        "type": "http request",
+        "z": "ae06bce3.51f69",
+        "name": "Send HIZ is true",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": false,
+        "url": "http://172.16.0.230/api/motor/estop?hiz=true&soft=true}\"",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 920,
+        "y": 1160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dc61596c.36d4c",
+        "type": "http request",
+        "z": "ae06bce3.51f69",
+        "name": "Request Status",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": false,
+        "url": "http://172.16.0.230/api/motor/state",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 920,
+        "y": 920,
+        "wires": [
+            [
+                "63f3c131.0f77a"
+            ]
+        ]
+    },
+    {
+        "id": "63f3c131.0f77a",
+        "type": "switch",
+        "z": "ae06bce3.51f69",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "\"busy\":false",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "\"busy\":true",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 890,
+        "y": 1080,
+        "wires": [
+            [
+                "9eda0ecc.8d2108",
+                "89cf929d.2e05d"
+            ],
+            [
+                "202ad44b.a1cc5c"
+            ]
+        ]
+    },
+    {
+        "id": "202ad44b.a1cc5c",
+        "type": "delay",
+        "z": "ae06bce3.51f69",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "2",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 900,
+        "y": 1000,
+        "wires": [
+            [
+                "dc61596c.36d4c"
+            ]
+        ]
+    },
+    {
+        "id": "6435805b.f1e73",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "Reset Variables  to\"factory\" (mostly 0's)",
+        "rules": [
+            {
+                "t": "set",
+                "p": "#:(file)::p_1_value",
+                "pt": "flow",
+                "to": "0",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "#:(file)::p_2_value",
+                "pt": "flow",
+                "to": "0",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "#:(file)::p_3_value",
+                "pt": "flow",
+                "to": "0",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "#:(file)::p_4_value",
+                "pt": "flow",
+                "to": "0",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "#:(file)::p_5_value",
+                "pt": "flow",
+                "to": "0",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "#:(file)::p_6_value",
+                "pt": "flow",
+                "to": "0",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "#:(file)::p_7_value",
+                "pt": "flow",
+                "to": "0",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "#:(file)::p_8_value",
+                "pt": "flow",
+                "to": "0",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "#:(file)::p_9_value",
+                "pt": "flow",
+                "to": "",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "#:(file)::button_function",
+                "pt": "flow",
+                "to": "send",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "#:(file)::motor_position",
+                "pt": "flow",
+                "to": "0",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "#:(file)::button_motor_position",
+                "pt": "flow",
+                "to": "0",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "#:(file)::button_frequency",
+                "pt": "flow",
+                "to": "0",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "#:(file)::final_frequency",
+                "pt": "flow",
+                "to": "0",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "#:(file)::application_state",
+                "pt": "flow",
+                "to": "initialized",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "#:(file)::button_token",
+                "pt": "flow",
+                "to": "0",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "#:(file)::band_token",
+                "pt": "flow",
+                "to": "0",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 530,
+        "y": 1120,
+        "wires": [
+            [
+                "2549d9ca.f59ab6"
+            ]
+        ]
+    },
+    {
+        "id": "537c23.35153bdc",
+        "type": "ui_button",
+        "z": "ae06bce3.51f69",
+        "name": "",
+        "group": "ae37dfa8.e0eaf",
+        "order": 12,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "label": "Home",
+        "tooltip": "",
+        "color": "Black",
+        "bgcolor": "Yellow",
+        "icon": "",
+        "payload": "0",
+        "payloadType": "num",
+        "topic": "",
+        "x": 270,
+        "y": 620,
+        "wires": [
+            [
+                "d704f32f.3a1ec8",
+                "25c9b4e4.1e2354"
+            ]
+        ]
+    },
+    {
+        "id": "c91d216e.7102f8",
+        "type": "http request",
+        "z": "ae06bce3.51f69",
+        "name": "Request Status",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": false,
+        "url": "http://172.16.0.230/api/motor/state",
+        "tls": "",
+        "persist": true,
+        "proxy": "",
+        "authType": "",
+        "x": 920,
+        "y": 620,
+        "wires": [
+            [
+                "67da77f8.91c31"
+            ]
+        ]
+    },
+    {
+        "id": "b9e3d0b2.e9fb8",
+        "type": "delay",
+        "z": "ae06bce3.51f69",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "2",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 900,
+        "y": 740,
+        "wires": [
+            [
+                "c91d216e.7102f8"
+            ]
+        ]
+    },
+    {
+        "id": "67da77f8.91c31",
+        "type": "switch",
+        "z": "ae06bce3.51f69",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "\"busy\":false",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "\"busy\":true",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 890,
+        "y": 680,
+        "wires": [
+            [
+                "1cfde75e.2525f9"
+            ],
+            [
+                "b9e3d0b2.e9fb8"
+            ]
+        ]
+    },
+    {
+        "id": "9eda0ecc.8d2108",
+        "type": "ui_toast",
+        "z": "ae06bce3.51f69",
+        "position": "bottom left",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "topic": "",
+        "name": "Motor Status Pop",
+        "x": 1190,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "92431d79.af11b",
+        "type": "comment",
+        "z": "ae06bce3.51f69",
+        "name": "MPL Sets Slider CTR.",
+        "info": "",
+        "x": 320,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "331dcf09.d83b1",
+        "type": "comment",
+        "z": "ae06bce3.51f69",
+        "name": "Freq = msg.payload * 1000",
+        "info": "",
+        "x": 950,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "5c1e5900.d7d06",
+        "type": "link in",
+        "z": "ae06bce3.51f69",
+        "name": "P(x) pushed",
+        "links": [
+            "566df7e8.5a5ff8",
+            "57ccab20.ac50c4",
+            "65d0c6df.30bab",
+            "67abb727.553b88",
+            "9247e747.a9d518",
+            "a9e555cd.48cd78",
+            "bf7f5f06.e07728",
+            "d2d124fe.12c25",
+            "cc7bb84e.674c68",
+            "d750a10d.c6bce",
+            "9c8eaecb.dae48",
+            "b2e569e2.5d594",
+            "3b4f1af8.909b26",
+            "cd23b7bd.70fd08",
+            "2ec3f53d.79808a",
+            "21377ca.38ae904",
+            "260e4ab4.fc4fae",
+            "57bb11cf.261a4",
+            "309e370c.bb9528",
+            "8101c8a6.18c06",
+            "ad5e104e.b631c",
+            "1e3d34ca.b0ff23",
+            "3b25a1e0.2a94d6",
+            "afd89d84.969008",
+            "d4f72c04.1388",
+            "1dad129d.a5b7ad",
+            "c5144729.4af458",
+            "75795cf2.a1552c",
+            "fda1be64.386588",
+            "a32f709d.8afbf",
+            "4bf81a19.dc5c0c",
+            "6aece9e1.1183e8"
+        ],
+        "x": 35,
+        "y": 500,
+        "wires": [
+            [
+                "8a3a4d3c.5d3e6"
+            ]
+        ]
+    },
+    {
+        "id": "8a3a4d3c.5d3e6",
+        "type": "delay",
+        "z": "ae06bce3.51f69",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "10",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 290,
+        "y": 500,
+        "wires": [
+            [
+                "25c9b4e4.1e2354",
+                "908dc167.b406e8",
+                "e0cc8a3c.ed38"
+            ]
+        ]
+    },
+    {
+        "id": "2549d9ca.f59ab6",
+        "type": "link out",
+        "z": "ae06bce3.51f69",
+        "name": "Zero Frequency Text",
+        "links": [
+            "19b5d3c4.40d3d4",
+            "75458887.9d47b8"
+        ],
+        "x": 735,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "19b5d3c4.40d3d4",
+        "type": "link in",
+        "z": "ae06bce3.51f69",
+        "name": "Get Zero Frequency",
+        "links": [
+            "2549d9ca.f59ab6"
+        ],
+        "x": 1055,
+        "y": 240,
+        "wires": [
+            [
+                "50b80906.ce2108"
+            ]
+        ]
+    },
+    {
+        "id": "abb4cb8b.c4a2c",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ui_control.min",
+                "pt": "msg",
+                "to": "7000",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "ui_control.max",
+                "pt": "msg",
+                "to": "7300",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "ui_control.step",
+                "pt": "msg",
+                "to": "10",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 920,
+        "y": 440,
+        "wires": [
+            [
+                "44db7ebb.8bd278"
+            ]
+        ]
+    },
+    {
+        "id": "b4374b40.d0b298",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ui_control.min",
+                "pt": "msg",
+                "to": "3500",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "ui_control.max",
+                "pt": "msg",
+                "to": "4000",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "ui_control.step",
+                "pt": "msg",
+                "to": "10",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 920,
+        "y": 480,
+        "wires": [
+            [
+                "44db7ebb.8bd278"
+            ]
+        ]
+    },
+    {
+        "id": "56b56856.43ec38",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ui_control.min",
+                "pt": "msg",
+                "to": "10100",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "ui_control.max",
+                "pt": "msg",
+                "to": "10150",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "ui_control.step",
+                "pt": "msg",
+                "to": "1",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 920,
+        "y": 400,
+        "wires": [
+            [
+                "44db7ebb.8bd278"
+            ]
+        ]
+    },
+    {
+        "id": "1d8e7ab.940d405",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ui_control.min",
+                "pt": "msg",
+                "to": "28000",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "ui_control.max",
+                "pt": "msg",
+                "to": "29700",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "ui_control.step",
+                "pt": "msg",
+                "to": "10",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 920,
+        "y": 280,
+        "wires": [
+            [
+                "44db7ebb.8bd278"
+            ]
+        ]
+    },
+    {
+        "id": "4a2934cf.baf284",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ui_control.min",
+                "pt": "msg",
+                "to": "21000",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "ui_control.max",
+                "pt": "msg",
+                "to": "21450",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "ui_control.step",
+                "pt": "msg",
+                "to": "10",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 920,
+        "y": 320,
+        "wires": [
+            [
+                "44db7ebb.8bd278"
+            ]
+        ]
+    },
+    {
+        "id": "7351afb7.cf7c28",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ui_control.min",
+                "pt": "msg",
+                "to": "14000",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "ui_control.max",
+                "pt": "msg",
+                "to": "14350",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "ui_control.step",
+                "pt": "msg",
+                "to": "10",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 920,
+        "y": 360,
+        "wires": [
+            [
+                "44db7ebb.8bd278"
+            ]
+        ]
+    },
+    {
+        "id": "908dc167.b406e8",
+        "type": "switch",
+        "z": "ae06bce3.51f69",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "btwn",
+                "v": "28000",
+                "vt": "num",
+                "v2": "29700",
+                "v2t": "num"
+            },
+            {
+                "t": "btwn",
+                "v": "21000",
+                "vt": "num",
+                "v2": "21450",
+                "v2t": "num"
+            },
+            {
+                "t": "btwn",
+                "v": "14000",
+                "vt": "num",
+                "v2": "14350",
+                "v2t": "num"
+            },
+            {
+                "t": "btwn",
+                "v": "10100",
+                "vt": "num",
+                "v2": "10150",
+                "v2t": "num"
+            },
+            {
+                "t": "btwn",
+                "v": "7000",
+                "vt": "num",
+                "v2": "7300",
+                "v2t": "num"
+            },
+            {
+                "t": "btwn",
+                "v": "3500",
+                "vt": "num",
+                "v2": "4000",
+                "v2t": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 6,
+        "x": 730,
+        "y": 360,
+        "wires": [
+            [
+                "1d8e7ab.940d405"
+            ],
+            [
+                "4a2934cf.baf284"
+            ],
+            [
+                "7351afb7.cf7c28"
+            ],
+            [
+                "56b56856.43ec38"
+            ],
+            [
+                "abb4cb8b.c4a2c"
+            ],
+            [
+                "b4374b40.d0b298"
+            ]
+        ]
+    },
+    {
+        "id": "6b355dbd.fe6f94",
+        "type": "comment",
+        "z": "ae06bce3.51f69",
+        "name": "P(x) Pushed Gets P(x) or p(x)_value",
+        "info": "",
+        "x": 160,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "85ab4d29.122bf8",
+        "type": "comment",
+        "z": "ae06bce3.51f69",
+        "name": "UI_control ONLY",
+        "info": "",
+        "x": 920,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "44db7ebb.8bd278",
+        "type": "link out",
+        "z": "ae06bce3.51f69",
+        "name": "",
+        "links": [
+            "75458887.9d47b8"
+        ],
+        "x": 1115,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "75458887.9d47b8",
+        "type": "link in",
+        "z": "ae06bce3.51f69",
+        "name": "courase adj",
+        "links": [
+            "44db7ebb.8bd278",
+            "e3b6e43f.1386a",
+            "2549d9ca.f59ab6"
+        ],
+        "x": 715,
+        "y": 220,
+        "wires": [
+            [
+                "e0cc8a3c.ed38"
+            ]
+        ]
+    },
+    {
+        "id": "addecd83.e9c48",
+        "type": "comment",
+        "z": "ae06bce3.51f69",
+        "name": "Adjust top 5 Digits",
+        "info": "",
+        "x": 730,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "749e2d28.499e6c",
+        "type": "comment",
+        "z": "ae06bce3.51f69",
+        "name": "Store m.pl into flow.final_frequency",
+        "info": "",
+        "x": 1260,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "fd5bd8a7.8405c8",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "#:(file)::band_token",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 940,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c20ddcdb.2263d",
+        "type": "comment",
+        "z": "ae06bce3.51f69",
+        "name": "Uses ui_control Only",
+        "info": "",
+        "x": 510,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "58de64d7.9b8c54",
+        "type": "comment",
+        "z": "ae06bce3.51f69",
+        "name": "Debug Triggers Below",
+        "info": "",
+        "x": 120,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "5070914c.088058",
+        "type": "comment",
+        "z": "ae06bce3.51f69",
+        "name": "Unimplemented - Use UI-Control to set up initial state, if Initialized is false.",
+        "info": "",
+        "x": 280,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "6f68e9f7.7473",
+        "type": "function",
+        "z": "ae06bce3.51f69",
+        "name": "MPL = MPL * 1000",
+        "func": "var freq_token = flow.get (\"p_1_value\",\"file\")\nmsg.payload = freq_token * 1000\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 810,
+        "y": 1280,
+        "wires": [
+            [
+                "bf6b004d.22e5d8"
+            ]
+        ]
+    },
+    {
+        "id": "d750a10d.c6bce",
+        "type": "link out",
+        "z": "ae06bce3.51f69",
+        "name": "",
+        "links": [
+            "5c1e5900.d7d06"
+        ],
+        "x": 975,
+        "y": 1520,
+        "wires": []
+    },
+    {
+        "id": "567e6887.1073f8",
+        "type": "comment",
+        "z": "ae06bce3.51f69",
+        "name": "For Testing:  Set button_labaels to \"Avail / home\"  Set button_functino to \"send\" or \"set\"  Reset all Variables",
+        "info": "",
+        "x": 380,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "d02acc47.c889c",
+        "type": "comment",
+        "z": "ae06bce3.51f69",
+        "name": "Do the same thing as P 1, just use differet Button or P_(x) numbers for 8 below.",
+        "info": "",
+        "x": 500,
+        "y": 1640,
+        "wires": []
+    },
+    {
+        "id": "18fd1cec.73e193",
+        "type": "switch",
+        "z": "ae06bce3.51f69",
+        "name": "Is Label Empty?",
+        "property": "#:(file)::label_text",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "empty"
+            },
+            {
+                "t": "nempty"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 540,
+        "y": 1280,
+        "wires": [
+            [
+                "6f68e9f7.7473"
+            ],
+            [
+                "342f233e.8e6cec"
+            ]
+        ]
+    },
+    {
+        "id": "342f233e.8e6cec",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "MPL to Label",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "#:(file)::label_text",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 1380,
+        "wires": [
+            [
+                "bf6b004d.22e5d8",
+                "4ad8fef1.6142c"
+            ]
+        ]
+    },
+    {
+        "id": "a142e2cc.4eb7e8",
+        "type": "comment",
+        "z": "ae06bce3.51f69",
+        "name": "Store band_token as Frequency,  Set f.b_f to \"send\"",
+        "info": "",
+        "x": 230,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "c4fc3119.db81d8",
+        "type": "comment",
+        "z": "ae06bce3.51f69",
+        "name": "No label, branch up",
+        "info": "",
+        "x": 550,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "16bf248.fbf0adc",
+        "type": "comment",
+        "z": "ae06bce3.51f69",
+        "name": "Set MPL to f.p(x)-value *1000",
+        "info": "",
+        "x": 860,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "869a7ea8.f2465",
+        "type": "comment",
+        "z": "ae06bce3.51f69",
+        "name": "Set MPL to f.label_text",
+        "info": "",
+        "x": 560,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "63a2902b.1dabb",
+        "type": "comment",
+        "z": "ae06bce3.51f69",
+        "name": "Check variable f.button_function",
+        "info": "",
+        "x": 370,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "7c728bcb.9fbad4",
+        "type": "comment",
+        "z": "ae06bce3.51f69",
+        "name": "Set MPL to f.p(x)_value, f.b_f to f.p(x) value.",
+        "info": "",
+        "x": 730,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "a84af55e.6b1a1",
+        "type": "inject",
+        "z": "ae06bce3.51f69",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 100,
+        "y": 820,
+        "wires": [
+            [
+                "c6132f3a.5c1ce8"
+            ]
+        ]
+    },
+    {
+        "id": "4ad8fef1.6142c",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "Reset Payload to p_(x)_value",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "#:(file)::p_1_value",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 840,
+        "y": 1380,
+        "wires": [
+            [
+                "d750a10d.c6bce"
+            ]
+        ]
+    },
+    {
+        "id": "f254ce7d.8ab5a",
+        "type": "comment",
+        "z": "ae06bce3.51f69",
+        "name": "Reset MPL to P_(x)_value",
+        "info": "",
+        "x": 830,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "2e7e6916.bc9bde",
+        "type": "ui_button",
+        "z": "ae06bce3.51f69",
+        "name": "P 2",
+        "group": "ae37dfa8.e0eaf",
+        "order": 13,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{msg.payload}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "P2",
+        "payloadType": "str",
+        "topic": "",
+        "x": 130,
+        "y": 1760,
+        "wires": [
+            [
+                "b285462f.fe45d8"
+            ]
+        ]
+    },
+    {
+        "id": "b285462f.fe45d8",
+        "type": "switch",
+        "z": "ae06bce3.51f69",
+        "name": "Set. Saved. Send",
+        "property": "#:(file)::button_function",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "set",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "saved",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "send",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 310,
+        "y": 1760,
+        "wires": [
+            [
+                "eba5c82.152f0b8"
+            ],
+            [],
+            [
+                "24f9690.f9e1398"
+            ]
+        ]
+    },
+    {
+        "id": "eba5c82.152f0b8",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "Store P2 as f.b_t",
+        "rules": [
+            {
+                "t": "set",
+                "p": "#:(file)::p_2_value",
+                "pt": "flow",
+                "to": "#:(file)::band_token",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "#:(file)::button_function",
+                "pt": "flow",
+                "to": "send",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 1700,
+        "wires": [
+            [
+                "2d9d6d9e.ba75ca"
+            ]
+        ]
+    },
+    {
+        "id": "24f9690.f9e1398",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "Send P2",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "#:(file)::p_2_value",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 1820,
+        "wires": [
+            [
+                "afd89d84.969008"
+            ]
+        ]
+    },
+    {
+        "id": "33936b5f.ec2aa4",
+        "type": "function",
+        "z": "ae06bce3.51f69",
+        "name": "MPL = MPL * 1000",
+        "func": "var freq_token = flow.get (\"p_2_value\",\"file\")\nmsg.payload = freq_token * 1000\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 790,
+        "y": 1700,
+        "wires": [
+            [
+                "2e7e6916.bc9bde"
+            ]
+        ]
+    },
+    {
+        "id": "afd89d84.969008",
+        "type": "link out",
+        "z": "ae06bce3.51f69",
+        "name": "",
+        "links": [
+            "5c1e5900.d7d06"
+        ],
+        "x": 975,
+        "y": 1820,
+        "wires": []
+    },
+    {
+        "id": "2d9d6d9e.ba75ca",
+        "type": "switch",
+        "z": "ae06bce3.51f69",
+        "name": "Is Label Empty?",
+        "property": "#:(file)::label_text",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "empty"
+            },
+            {
+                "t": "nempty"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 540,
+        "y": 1700,
+        "wires": [
+            [
+                "33936b5f.ec2aa4"
+            ],
+            [
+                "8e438ed7.0a7708"
+            ]
+        ]
+    },
+    {
+        "id": "8e438ed7.0a7708",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "MPL to Label",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "#:(file)::label_text",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 1760,
+        "wires": [
+            [
+                "2e7e6916.bc9bde",
+                "463b9498.cc995c"
+            ]
+        ]
+    },
+    {
+        "id": "463b9498.cc995c",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "Reset Payload to p_(x)_value",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "#:(file)::p_2_value",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 820,
+        "y": 1760,
+        "wires": [
+            [
+                "afd89d84.969008"
+            ]
+        ]
+    },
+    {
+        "id": "ea9175bc.f5ca68",
+        "type": "ui_button",
+        "z": "ae06bce3.51f69",
+        "name": "P 3",
+        "group": "ae37dfa8.e0eaf",
+        "order": 13,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{msg.payload}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "P3",
+        "payloadType": "str",
+        "topic": "",
+        "x": 130,
+        "y": 1960,
+        "wires": [
+            [
+                "d85ffb82.7b5af8"
+            ]
+        ]
+    },
+    {
+        "id": "d85ffb82.7b5af8",
+        "type": "switch",
+        "z": "ae06bce3.51f69",
+        "name": "Set. Saved. Send",
+        "property": "#:(file)::button_function",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "set",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "saved",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "send",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 310,
+        "y": 1960,
+        "wires": [
+            [
+                "c7e41348.6f585"
+            ],
+            [],
+            [
+                "ca044e25.1ff84"
+            ]
+        ]
+    },
+    {
+        "id": "c7e41348.6f585",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "Store P3 as f.b_t",
+        "rules": [
+            {
+                "t": "set",
+                "p": "#:(file)::p_3_value",
+                "pt": "flow",
+                "to": "#:(file)::band_token",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "#:(file)::button_function",
+                "pt": "flow",
+                "to": "send",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 1900,
+        "wires": [
+            [
+                "fdf20e92.738338"
+            ]
+        ]
+    },
+    {
+        "id": "ca044e25.1ff84",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "Send P3",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "#:(file)::p_3_value",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 2020,
+        "wires": [
+            [
+                "d4f72c04.1388"
+            ]
+        ]
+    },
+    {
+        "id": "650eba0a.119fec",
+        "type": "function",
+        "z": "ae06bce3.51f69",
+        "name": "MPL = MPL * 1000",
+        "func": "var freq_token = flow.get (\"p_3_value\",\"file\")\nmsg.payload = freq_token * 1000\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 790,
+        "y": 1900,
+        "wires": [
+            [
+                "ea9175bc.f5ca68"
+            ]
+        ]
+    },
+    {
+        "id": "d4f72c04.1388",
+        "type": "link out",
+        "z": "ae06bce3.51f69",
+        "name": "",
+        "links": [
+            "5c1e5900.d7d06"
+        ],
+        "x": 975,
+        "y": 2020,
+        "wires": []
+    },
+    {
+        "id": "fdf20e92.738338",
+        "type": "switch",
+        "z": "ae06bce3.51f69",
+        "name": "Is Label Empty?",
+        "property": "#:(file)::label_text",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "empty"
+            },
+            {
+                "t": "nempty"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 540,
+        "y": 1900,
+        "wires": [
+            [
+                "650eba0a.119fec"
+            ],
+            [
+                "26d05309.dfdd84"
+            ]
+        ]
+    },
+    {
+        "id": "26d05309.dfdd84",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "MPL to Label",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "#:(file)::label_text",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 1960,
+        "wires": [
+            [
+                "ea9175bc.f5ca68",
+                "ad102003.e0029"
+            ]
+        ]
+    },
+    {
+        "id": "ad102003.e0029",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "Reset Payload to p_(x)_value",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "#:(file)::p_3_value",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 820,
+        "y": 1960,
+        "wires": [
+            [
+                "d4f72c04.1388"
+            ]
+        ]
+    },
+    {
+        "id": "c466b20a.0b2328",
+        "type": "ui_button",
+        "z": "ae06bce3.51f69",
+        "name": "P 4",
+        "group": "ae37dfa8.e0eaf",
+        "order": 13,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{msg.payload}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "P4",
+        "payloadType": "str",
+        "topic": "",
+        "x": 130,
+        "y": 2160,
+        "wires": [
+            [
+                "e198736a.843d2"
+            ]
+        ]
+    },
+    {
+        "id": "e198736a.843d2",
+        "type": "switch",
+        "z": "ae06bce3.51f69",
+        "name": "Set. Saved. Send",
+        "property": "#:(file)::button_function",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "set",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "saved",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "send",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 310,
+        "y": 2160,
+        "wires": [
+            [
+                "2176697d.eff676"
+            ],
+            [],
+            [
+                "8626b387.318b1"
+            ]
+        ]
+    },
+    {
+        "id": "2176697d.eff676",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "Store P4 as f.b_t",
+        "rules": [
+            {
+                "t": "set",
+                "p": "#:(file)::p_4_value",
+                "pt": "flow",
+                "to": "#:(file)::band_token",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "#:(file)::button_function",
+                "pt": "flow",
+                "to": "send",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 2100,
+        "wires": [
+            [
+                "30ab5d44.e9065a"
+            ]
+        ]
+    },
+    {
+        "id": "8626b387.318b1",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "Send P4",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "#:(file)::p_4_value",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 2220,
+        "wires": [
+            [
+                "1dad129d.a5b7ad"
+            ]
+        ]
+    },
+    {
+        "id": "ef59d7f4.88242",
+        "type": "function",
+        "z": "ae06bce3.51f69",
+        "name": "MPL = MPL * 1000",
+        "func": "var freq_token = flow.get (\"p_4_value\",\"file\")\nmsg.payload = freq_token * 1000\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 790,
+        "y": 2100,
+        "wires": [
+            [
+                "c466b20a.0b2328"
+            ]
+        ]
+    },
+    {
+        "id": "1dad129d.a5b7ad",
+        "type": "link out",
+        "z": "ae06bce3.51f69",
+        "name": "",
+        "links": [
+            "5c1e5900.d7d06"
+        ],
+        "x": 975,
+        "y": 2220,
+        "wires": []
+    },
+    {
+        "id": "30ab5d44.e9065a",
+        "type": "switch",
+        "z": "ae06bce3.51f69",
+        "name": "Is Label Empty?",
+        "property": "#:(file)::label_text",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "empty"
+            },
+            {
+                "t": "nempty"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 540,
+        "y": 2100,
+        "wires": [
+            [
+                "ef59d7f4.88242"
+            ],
+            [
+                "8fc90f4c.537968"
+            ]
+        ]
+    },
+    {
+        "id": "8fc90f4c.537968",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "MPL to Label",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "#:(file)::label_text",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 2160,
+        "wires": [
+            [
+                "c466b20a.0b2328",
+                "ae648213.f913d8"
+            ]
+        ]
+    },
+    {
+        "id": "ae648213.f913d8",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "Reset Payload to p_(x)_value",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "#:(file)::p_4_value",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 820,
+        "y": 2160,
+        "wires": [
+            [
+                "1dad129d.a5b7ad"
+            ]
+        ]
+    },
+    {
+        "id": "e951c178.5d483",
+        "type": "ui_button",
+        "z": "ae06bce3.51f69",
+        "name": "P 5",
+        "group": "ae37dfa8.e0eaf",
+        "order": 13,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{msg.payload}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "P5",
+        "payloadType": "str",
+        "topic": "",
+        "x": 130,
+        "y": 2360,
+        "wires": [
+            [
+                "39d17c44.cdaffc"
+            ]
+        ]
+    },
+    {
+        "id": "39d17c44.cdaffc",
+        "type": "switch",
+        "z": "ae06bce3.51f69",
+        "name": "Set. Saved. Send",
+        "property": "#:(file)::button_function",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "set",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "saved",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "send",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 310,
+        "y": 2360,
+        "wires": [
+            [
+                "d1e74cdd.e163"
+            ],
+            [],
+            [
+                "9c00b760.1758f"
+            ]
+        ]
+    },
+    {
+        "id": "d1e74cdd.e163",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "Store P5 as f.b_t",
+        "rules": [
+            {
+                "t": "set",
+                "p": "#:(file)::p_5_value",
+                "pt": "flow",
+                "to": "#:(file)::band_token",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "#:(file)::button_function",
+                "pt": "flow",
+                "to": "send",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 2300,
+        "wires": [
+            [
+                "ff607e6a.d6f288"
+            ]
+        ]
+    },
+    {
+        "id": "9c00b760.1758f",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "Send P5",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "#:(file)::p_5_value",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 2420,
+        "wires": [
+            [
+                "c5144729.4af458"
+            ]
+        ]
+    },
+    {
+        "id": "3bae9419.785414",
+        "type": "function",
+        "z": "ae06bce3.51f69",
+        "name": "MPL = MPL * 1000",
+        "func": "var freq_token = flow.get (\"p_5_value\",\"file\")\nmsg.payload = freq_token * 1000\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 790,
+        "y": 2300,
+        "wires": [
+            [
+                "e951c178.5d483"
+            ]
+        ]
+    },
+    {
+        "id": "c5144729.4af458",
+        "type": "link out",
+        "z": "ae06bce3.51f69",
+        "name": "",
+        "links": [
+            "5c1e5900.d7d06"
+        ],
+        "x": 975,
+        "y": 2420,
+        "wires": []
+    },
+    {
+        "id": "ff607e6a.d6f288",
+        "type": "switch",
+        "z": "ae06bce3.51f69",
+        "name": "Is Label Empty?",
+        "property": "#:(file)::label_text",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "empty"
+            },
+            {
+                "t": "nempty"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 540,
+        "y": 2300,
+        "wires": [
+            [
+                "3bae9419.785414"
+            ],
+            [
+                "cebb85a7.b65b4"
+            ]
+        ]
+    },
+    {
+        "id": "cebb85a7.b65b4",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "MPL to Label",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "#:(file)::label_text",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 2360,
+        "wires": [
+            [
+                "e951c178.5d483",
+                "71e74abf.35d9fc"
+            ]
+        ]
+    },
+    {
+        "id": "71e74abf.35d9fc",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "Reset Payload to p_(x)_value",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "#:(file)::p_5_value",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 820,
+        "y": 2360,
+        "wires": [
+            [
+                "c5144729.4af458"
+            ]
+        ]
+    },
+    {
+        "id": "ae278745.ed0ee8",
+        "type": "ui_button",
+        "z": "ae06bce3.51f69",
+        "name": "P 6",
+        "group": "ae37dfa8.e0eaf",
+        "order": 13,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{msg.payload}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "P6",
+        "payloadType": "str",
+        "topic": "",
+        "x": 130,
+        "y": 2560,
+        "wires": [
+            [
+                "5af5f1ba.7dcba8"
+            ]
+        ]
+    },
+    {
+        "id": "5af5f1ba.7dcba8",
+        "type": "switch",
+        "z": "ae06bce3.51f69",
+        "name": "Set. Saved. Send",
+        "property": "#:(file)::button_function",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "set",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "saved",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "send",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 310,
+        "y": 2560,
+        "wires": [
+            [
+                "5326a7b3.14a588"
+            ],
+            [],
+            [
+                "79aa4791.7761d8"
+            ]
+        ]
+    },
+    {
+        "id": "5326a7b3.14a588",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "Store P6 as f.b_t",
+        "rules": [
+            {
+                "t": "set",
+                "p": "#:(file)::p_6_value",
+                "pt": "flow",
+                "to": "#:(file)::band_token",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "#:(file)::button_function",
+                "pt": "flow",
+                "to": "send",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 2500,
+        "wires": [
+            [
+                "ec2cc7a1.64eca"
+            ]
+        ]
+    },
+    {
+        "id": "79aa4791.7761d8",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "Send P6",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "#:(file)::p_6_value",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 2620,
+        "wires": [
+            [
+                "75795cf2.a1552c"
+            ]
+        ]
+    },
+    {
+        "id": "a72e0cb0.058938",
+        "type": "function",
+        "z": "ae06bce3.51f69",
+        "name": "MPL = MPL * 1000",
+        "func": "var freq_token = flow.get (\"p_6_value\",\"file\")\nmsg.payload = freq_token * 1000\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 790,
+        "y": 2500,
+        "wires": [
+            [
+                "ae278745.ed0ee8"
+            ]
+        ]
+    },
+    {
+        "id": "75795cf2.a1552c",
+        "type": "link out",
+        "z": "ae06bce3.51f69",
+        "name": "",
+        "links": [
+            "5c1e5900.d7d06"
+        ],
+        "x": 975,
+        "y": 2620,
+        "wires": []
+    },
+    {
+        "id": "ec2cc7a1.64eca",
+        "type": "switch",
+        "z": "ae06bce3.51f69",
+        "name": "Is Label Empty?",
+        "property": "#:(file)::label_text",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "empty"
+            },
+            {
+                "t": "nempty"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 540,
+        "y": 2500,
+        "wires": [
+            [
+                "a72e0cb0.058938"
+            ],
+            [
+                "cf0599d1.5e0278"
+            ]
+        ]
+    },
+    {
+        "id": "cf0599d1.5e0278",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "MPL to Label",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "#:(file)::label_text",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 2560,
+        "wires": [
+            [
+                "ae278745.ed0ee8",
+                "123bfb51.75555d"
+            ]
+        ]
+    },
+    {
+        "id": "123bfb51.75555d",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "Reset Payload to p_(x)_value",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "#:(file)::p_6_value",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 820,
+        "y": 2560,
+        "wires": [
+            [
+                "75795cf2.a1552c"
+            ]
+        ]
+    },
+    {
+        "id": "80d6382e.d5f2e",
+        "type": "ui_button",
+        "z": "ae06bce3.51f69",
+        "name": "P 7",
+        "group": "ae37dfa8.e0eaf",
+        "order": 13,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{msg.payload}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "P7",
+        "payloadType": "str",
+        "topic": "",
+        "x": 130,
+        "y": 2760,
+        "wires": [
+            [
+                "c81fb6d1.78f4f"
+            ]
+        ]
+    },
+    {
+        "id": "c81fb6d1.78f4f",
+        "type": "switch",
+        "z": "ae06bce3.51f69",
+        "name": "Set. Saved. Send",
+        "property": "#:(file)::button_function",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "set",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "saved",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "send",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 310,
+        "y": 2760,
+        "wires": [
+            [
+                "9f20bb24.1d497"
+            ],
+            [],
+            [
+                "717e5c5f.e7ab5c"
+            ]
+        ]
+    },
+    {
+        "id": "9f20bb24.1d497",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "Store P7 as f.b_t",
+        "rules": [
+            {
+                "t": "set",
+                "p": "#:(file)::p_7_value",
+                "pt": "flow",
+                "to": "#:(file)::band_token",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "#:(file)::button_function",
+                "pt": "flow",
+                "to": "send",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 2700,
+        "wires": [
+            [
+                "2afad2c8.2b780e"
+            ]
+        ]
+    },
+    {
+        "id": "717e5c5f.e7ab5c",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "Send P7",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "#:(file)::p_7_value",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 2820,
+        "wires": [
+            [
+                "fda1be64.386588"
+            ]
+        ]
+    },
+    {
+        "id": "9f91789a.f6a2d",
+        "type": "function",
+        "z": "ae06bce3.51f69",
+        "name": "MPL = MPL * 1000",
+        "func": "var freq_token = flow.get (\"p_7_value\",\"file\")\nmsg.payload = freq_token * 1000\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 790,
+        "y": 2700,
+        "wires": [
+            [
+                "80d6382e.d5f2e"
+            ]
+        ]
+    },
+    {
+        "id": "fda1be64.386588",
+        "type": "link out",
+        "z": "ae06bce3.51f69",
+        "name": "",
+        "links": [
+            "5c1e5900.d7d06"
+        ],
+        "x": 975,
+        "y": 2820,
+        "wires": []
+    },
+    {
+        "id": "2afad2c8.2b780e",
+        "type": "switch",
+        "z": "ae06bce3.51f69",
+        "name": "Is Label Empty?",
+        "property": "#:(file)::label_text",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "empty"
+            },
+            {
+                "t": "nempty"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 540,
+        "y": 2700,
+        "wires": [
+            [
+                "9f91789a.f6a2d"
+            ],
+            [
+                "15458ffa.ec72a"
+            ]
+        ]
+    },
+    {
+        "id": "15458ffa.ec72a",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "MPL to Label",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "#:(file)::label_text",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 2760,
+        "wires": [
+            [
+                "80d6382e.d5f2e",
+                "8e4e4bf0.3bf158"
+            ]
+        ]
+    },
+    {
+        "id": "8e4e4bf0.3bf158",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "Reset Payload to p_(x)_value",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "#:(file)::p_7_value",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 820,
+        "y": 2760,
+        "wires": [
+            [
+                "fda1be64.386588"
+            ]
+        ]
+    },
+    {
+        "id": "f9c98770.7a7ca",
+        "type": "ui_button",
+        "z": "ae06bce3.51f69",
+        "name": "P 8",
+        "group": "ae37dfa8.e0eaf",
+        "order": 13,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{msg.payload}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "P8",
+        "payloadType": "str",
+        "topic": "",
+        "x": 130,
+        "y": 2960,
+        "wires": [
+            [
+                "8379f34e.9ea018"
+            ]
+        ]
+    },
+    {
+        "id": "8379f34e.9ea018",
+        "type": "switch",
+        "z": "ae06bce3.51f69",
+        "name": "Set. Saved. Send",
+        "property": "#:(file)::button_function",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "set",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "saved",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "send",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 310,
+        "y": 2960,
+        "wires": [
+            [
+                "d319aebb.0460d8"
+            ],
+            [],
+            [
+                "1ea92cea.7616b3"
+            ]
+        ]
+    },
+    {
+        "id": "d319aebb.0460d8",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "Store P8 as f.b_t",
+        "rules": [
+            {
+                "t": "set",
+                "p": "#:(file)::p_8_value",
+                "pt": "flow",
+                "to": "#:(file)::band_token",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "#:(file)::button_function",
+                "pt": "flow",
+                "to": "send",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 2900,
+        "wires": [
+            [
+                "5f332609.4cdf7"
+            ]
+        ]
+    },
+    {
+        "id": "1ea92cea.7616b3",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "Send P8",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "#:(file)::p_8_value",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 3020,
+        "wires": [
+            [
+                "a32f709d.8afbf"
+            ]
+        ]
+    },
+    {
+        "id": "4777791b.25c1a",
+        "type": "function",
+        "z": "ae06bce3.51f69",
+        "name": "MPL = MPL * 1000",
+        "func": "var freq_token = flow.get (\"p_8_value\",\"file\")\nmsg.payload = freq_token * 1000\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 790,
+        "y": 2900,
+        "wires": [
+            [
+                "f9c98770.7a7ca"
+            ]
+        ]
+    },
+    {
+        "id": "a32f709d.8afbf",
+        "type": "link out",
+        "z": "ae06bce3.51f69",
+        "name": "",
+        "links": [
+            "5c1e5900.d7d06"
+        ],
+        "x": 975,
+        "y": 3020,
+        "wires": []
+    },
+    {
+        "id": "5f332609.4cdf7",
+        "type": "switch",
+        "z": "ae06bce3.51f69",
+        "name": "Is Label Empty?",
+        "property": "#:(file)::label_text",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "empty"
+            },
+            {
+                "t": "nempty"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 540,
+        "y": 2900,
+        "wires": [
+            [
+                "4777791b.25c1a"
+            ],
+            [
+                "4a21a59d.69e7b4"
+            ]
+        ]
+    },
+    {
+        "id": "4a21a59d.69e7b4",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "MPL to Label",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "#:(file)::label_text",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 2960,
+        "wires": [
+            [
+                "f9c98770.7a7ca"
+            ]
+        ]
+    },
+    {
+        "id": "ebffe867.34ffd8",
+        "type": "ui_button",
+        "z": "ae06bce3.51f69",
+        "name": "P 9",
+        "group": "ae37dfa8.e0eaf",
+        "order": 13,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{msg.payload}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "P9",
+        "payloadType": "str",
+        "topic": "",
+        "x": 130,
+        "y": 3160,
+        "wires": [
+            [
+                "6a3f48a5.b845c"
+            ]
+        ]
+    },
+    {
+        "id": "6a3f48a5.b845c",
+        "type": "switch",
+        "z": "ae06bce3.51f69",
+        "name": "Set. Saved. Send",
+        "property": "#:(file)::button_function",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "set",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "saved",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "send",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 310,
+        "y": 3160,
+        "wires": [
+            [
+                "1ca74128.0876af"
+            ],
+            [],
+            [
+                "343649c8.96fa86"
+            ]
+        ]
+    },
+    {
+        "id": "1ca74128.0876af",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "Store P9 as f.b_t",
+        "rules": [
+            {
+                "t": "set",
+                "p": "#:(file)::p_9_value",
+                "pt": "flow",
+                "to": "#:(file)::band_token",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "#:(file)::button_function",
+                "pt": "flow",
+                "to": "send",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 3100,
+        "wires": [
+            [
+                "c158dc28.ae64d8"
+            ]
+        ]
+    },
+    {
+        "id": "343649c8.96fa86",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "Send P9",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "#:(file)::p_9_value",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 3220,
+        "wires": [
+            [
+                "4bf81a19.dc5c0c"
+            ]
+        ]
+    },
+    {
+        "id": "9440feb6.3824a",
+        "type": "function",
+        "z": "ae06bce3.51f69",
+        "name": "MPL = MPL * 1000",
+        "func": "var freq_token = flow.get (\"p_9_value\",\"file\")\nmsg.payload = freq_token * 1000\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 790,
+        "y": 3100,
+        "wires": [
+            [
+                "ebffe867.34ffd8"
+            ]
+        ]
+    },
+    {
+        "id": "4bf81a19.dc5c0c",
+        "type": "link out",
+        "z": "ae06bce3.51f69",
+        "name": "",
+        "links": [
+            "5c1e5900.d7d06"
+        ],
+        "x": 975,
+        "y": 3220,
+        "wires": []
+    },
+    {
+        "id": "c158dc28.ae64d8",
+        "type": "switch",
+        "z": "ae06bce3.51f69",
+        "name": "Is Label Empty?",
+        "property": "#:(file)::label_text",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "empty"
+            },
+            {
+                "t": "nempty"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 540,
+        "y": 3100,
+        "wires": [
+            [
+                "9440feb6.3824a"
+            ],
+            [
+                "627aebf5.3737cc"
+            ]
+        ]
+    },
+    {
+        "id": "627aebf5.3737cc",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "MPL to Label",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "#:(file)::label_text",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 3160,
+        "wires": [
+            [
+                "ebffe867.34ffd8",
+                "b4f2c6c9.f482a"
+            ]
+        ]
+    },
+    {
+        "id": "b4f2c6c9.f482a",
+        "type": "change",
+        "z": "ae06bce3.51f69",
+        "name": "Reset Payload to p_(x)_value",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "#:(file)::p_9_value",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 820,
+        "y": 3160,
+        "wires": [
+            [
+                "4bf81a19.dc5c0c"
+            ]
+        ]
+    },
+    {
+        "id": "5134c642.535f88",
+        "type": "inject",
+        "z": "ae06bce3.51f69",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 100,
+        "y": 720,
+        "wires": [
+            [
+                "8de3ca50.1bd898"
+            ]
+        ]
+    },
+    {
+        "id": "85662dda.1455e",
+        "type": "inject",
+        "z": "ae06bce3.51f69",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 100,
+        "y": 620,
+        "wires": [
+            [
+                "537c23.35153bdc"
+            ]
+        ]
+    },
+    {
+        "id": "f74ec6bb.199c",
+        "type": "comment",
+        "z": "ae06bce3.51f69",
+        "name": "Large Comment - See Properties.",
+        "info": "The output from this switch node could each gio to theri corresponding change node as above.  (They are duplicates)-  For now, kep separate to enable eassier debugging.  The nearby change nodes could be eliminated alone with the\"invisble links\" that aggregate them.",
+        "x": 670,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "5f6ed4e8.f317c4",
+        "type": "comment",
+        "z": "ae06bce3.51f69",
+        "name": "TESTING: Sets the Button_Function variable to \"Set\",  gets resete to \"send\" when button labels have been set",
+        "info": "",
+        "x": 390,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "871a8851.c05078",
+        "type": "comment",
+        "z": "ae06bce3.51f69",
+        "name": "Input node gets value from pushed buttons.",
+        "info": "",
+        "x": 190,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "fb41714b.768608",
+        "type": "comment",
+        "z": "ae06bce3.51f69",
+        "name": "\"mpl\" is abbreviation for Message Payload - throughout!",
+        "info": "",
+        "x": 870,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "7aa03bae.5b8604",
+        "type": "comment",
+        "z": "ae06bce3.51f69",
+        "name": "Blue nodes = GUI. See Comment Props. 4 more.",
+        "info": "Next cleanup stop.\nCheck that all variables are actually used.  Some seem superfluous, but not deleted due to fear.  :-)",
+        "x": 200,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "c897095e.d39da",
+        "type": "comment",
+        "z": "ae06bce3.51f69",
+        "name": "Pop the motor's status for Debugging.",
+        "info": "",
+        "x": 1210,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "99cee57c.093308",
+        "type": "comment",
+        "z": "ae06bce3.51f69",
+        "name": "Hi-Z makes sure that the motor is really OFF.",
+        "info": "",
+        "x": 1190,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "602a8c5e.6a5eec",
+        "type": "comment",
+        "z": "ae06bce3.51f69",
+        "name": "Is the Motor ready?",
+        "info": "",
+        "x": 1210,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "27ae6b76.f28904",
+        "type": "comment",
+        "z": "ae06bce3.51f69",
+        "name": "If not, try again....",
+        "info": "",
+        "x": 1200,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "5b450a81.60e46c",
+        "type": "comment",
+        "z": "ae06bce3.51f69",
+        "name": "Otherwise - create and send command.",
+        "info": "",
+        "x": 1230,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "6d8f4e62.d6998",
+        "type": "comment",
+        "z": "ae06bce3.51f69",
+        "name": "Good practice to check \"ready\" before commands.",
+        "info": "",
+        "x": 1250,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "3d5242f5.fd6186",
+        "type": "comment",
+        "z": "ae06bce3.51f69",
+        "name": "Home set everything to Zero, no other action.",
+        "info": "",
+        "x": 190,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "b87cfe0.37b708",
+        "type": "comment",
+        "z": "ae06bce3.51f69",
+        "name": "Send to Motor is only way to ask for action.",
+        "info": "",
+        "x": 190,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "f3feddae.55dda8",
+        "type": "comment",
+        "z": "ae06bce3.51f69",
+        "name": "For Testing:  resets buttons....",
+        "info": "",
+        "x": 140,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "20dced3a.d0758a",
+        "type": "comment",
+        "z": "ae06bce3.51f69",
+        "name": "Button Logic below.  Clone and change P number for more buttons.  No other changes needed.",
+        "info": "",
+        "x": 360,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "ae37dfa8.e0eaf",
+        "type": "ui_group",
+        "z": "",
+        "name": "Tuner",
+        "tab": "8a98ce4c.f2c4f",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "8a98ce4c.f2c4f",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Tuning",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    }
+]

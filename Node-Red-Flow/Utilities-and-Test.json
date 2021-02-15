@@ -1,0 +1,759 @@
+[
+    {
+        "id": "b5ea1fcd.80f85",
+        "type": "tab",
+        "label": "Utilties",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "e7b7f1f4.0dfc78",
+        "type": "inject",
+        "z": "b5ea1fcd.80f85",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 100,
+        "y": 180,
+        "wires": [
+            [
+                "cbc587ce.6748e8"
+            ]
+        ]
+    },
+    {
+        "id": "40d5855.fdadb7c",
+        "type": "function",
+        "z": "b5ea1fcd.80f85",
+        "name": "Production - Default Variables to Global. FILE Context",
+        "func": "var HOST=\"172.16.0.230\";\nvar MODE=\"current\";\nvar STEPSIZE=\"16\";\nvar OCD=\"500\";\nvar OCDSHUTDOWN=\"true\";\nvar MAXSPEED=\"1200\";\nvar MINSPEED=\"0\";\nvar ACCEL=\"50\";\nvar DECEL=\"50\";\nvar FSSPEED=\"1300\";\nvar FSBOOST=\"false\";\nvar REVERSE=\"false\";\nvar SAVE_EEPROM=\"false\";\nvar STOP_HIZ=\"true\";\nvar STOP_SOFT=\"true\";\n\nvar CM_KTHOLD=\"0\";\nvar CM_KTRUN=\"1.5\";\nvar CM_KTACCEL=\"2.3\";\nvar CM_KTDECEL=\"2.3\";\nvar CM_SWITCHPERIOD=\"44\";\nvar CM_PREDICT=\"TRUE\";\nvar CM_MINON=\"21\";\nvar CM_MINOFF=\"21\";\nvar CM_FASTOFF=\"4\";\nvar CM_FASTSTEP=\"20\";\n\nvar VM_KTHOLD=\"15\";\nvar VM_KTRUN=\"15\";\nvar VM_KTACCEL=\"15\";\nvar VM_KTDECEL=\"15\";\nvar VM_PWMFREQ=\"23.4\";\nvar VM_STALL=\"750\";\nvar VM_VOLT_COMP=\"false\";\nvar VM_BEMF_SLOPEL=\"0.0375\";\nvar VM_BEMF_SPEEDCO=\"61.5\";\nvar VM_BEMF_SLOPEHACC=\"0.0615\";\nvar VM_BEMF_SLOPEHDEC=\"0.0615\";\n\n\nglobal.set (\"HOST\",HOST,\"file\");\nglobal.set (\"MODE\",MODE,\"file\");\nglobal.set (\"STEPSIZE\",STEPSIZE,\"file\");\nglobal.set (\"OCD\",OCD,\"file\");\nglobal.set (\"OCDSHUTDOWN\",OCDSHUTDOWN,\"file\");\nglobal.set (\"MAXSPEED\",MAXSPEED,\"file\");\nglobal.set (\"MINSPEED\",MINSPEED,\"file\");\nglobal.set (\"ACCEL\",ACCEL,\"file\");\nglobal.set (\"DECEL\",DECEL,\"file\");\n\nglobal.set (\"FSSPEED\",FSSPEED,\"file\");\nglobal.set (\"FSBOOST\",FSBOOST,\"file\");\nglobal.set (\"REVERSE\",REVERSE,\"file\");\nglobal.set (\"SAVE_EEPROM\",SAVE_EEPROM,\"file\");\n\nglobal.set (\"STOP_HIZ\",STOP_HIZ,\"file\");\nglobal.set (\"STOP_SOFT\",STOP_SOFT,\"file\");\nglobal.set (\"VM_KTHOLD\",VM_KTHOLD,\"file\");\nglobal.set (\"VM_KTRUN\",VM_KTRUN,\"file\");\nglobal.set (\"VM_KTACCEL\",VM_KTACCEL,\"file\");\nglobal.set (\"VM_KTDECEL\",VM_KTDECEL,\"file\");\n\nglobal.set (\"CM_KTHOLD\",CM_KTHOLD,\"file\");\nglobal.set (\"CM_KTRUN\",CM_KTRUN,\"file\");\nglobal.set (\"CM_KTACCEL\",CM_KTACCEL,\"file\");\nglobal.set (\"CM_KTDECEL\",CM_KTDECEL,\"file\");\nglobal.set (\"CM_SWITCHPERIOD\",CM_SWITCHPERIOD,\"file\");\nglobal.set (\"CM_PREDICT\",CM_PREDICT,\"file\");\nglobal.set (\"CM_MINON\",CM_MINON,\"file\");\nglobal.set (\"CM_MINOFF\",CM_MINOFF,\"file\");\nglobal.set (\"CM_FASTOFF\",CM_FASTOFF,\"file\");\nglobal.set (\"CM_FASTSTEP\",CM_FASTSTEP,\"file\");\n\nglobal.set (\"VM_PWMFREQ\",VM_PWMFREQ,\"file\");\nglobal.set (\"VM_STALL\",VM_STALL,\"file\");\nglobal.set (\"VM_VOLT_COMP\",VM_VOLT_COMP,\"file\");\nglobal.set (\"VM_BEMF_SLOPEL\",VM_BEMF_SLOPEL,\"file\");\nglobal.set (\"VM_BEMF_SPEEDCO\",VM_BEMF_SPEEDCO,\"file\");\nglobal.set (\"VM_BEMF_SLOPEHACC\",VM_BEMF_SLOPEHACC,\"file\");\nglobal.set (\"VM_BEMF_SLOPEHDEC\",VM_BEMF_SLOPEHDEC,\"file\");\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 660,
+        "y": 180,
+        "wires": [
+            [
+                "229904b5.41d23c"
+            ]
+        ]
+    },
+    {
+        "id": "229904b5.41d23c",
+        "type": "debug",
+        "z": "b5ea1fcd.80f85",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 1130,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "52003396.744fb4",
+        "type": "function",
+        "z": "b5ea1fcd.80f85",
+        "name": "Production - Variables to FLOW Conext from Global.File Context (Not Needed?)",
+        "func": "var HOST=\"172.16.0.230\";\nvar MODE=\"voltage\";\nvar STEPSIZE=\"1\";\nvar OCD=\"300\";\nvar OCDSHUTDOWN=\"true\";\nvar MAXSPEED=\"0000\";\nvar MINSPEED=\"0\";\nvar ACCEL=\"1000\";\nvar DECEL=\"1000\";\nvar VM_KTHOLD=\"15\";\nvar VM_KTRUN=\"15\";\nvar VM_KTACCEL=\"15\";\nvar VM_KTDECEL=\"15\";\nvar FSSPEED=\"2000\";\nvar FSBOOST=\"false\";\nvar REVERSE=\"false\";\nvar SAVE_EEPROM=\"true\";\nvar VM_PWMFREQ=\"23.4\";\nvar VM_STALL=\"750\";\nvar VM_VOLT_COMP=\"false\";\nvar VM_BEMF_SLOPEL=\"0.0375\";\nvar VM_BEMF_SPEEDCO=\"61.5\";\nvar VM_BEMF_SLOPEHACC=\"0.0615\";\nvar VM_BEMF_SLOPEHDEC=\"0.0615\";\nvar STOP_HIZ=\"true\";\nvar STOP_SOFT=\"true\";\n\nHOST = global.get (\"HOST\",\"file\");\nMODE = global.get (\"MODE\",\"file\");\nSTEPSIZE = global.get (\"STEPSIZE\",\"file\");\nOCD = global.get (\"OCD\",\"file\");\nOCDSHUTDOWN = global.get (\"OCDSHUTDOWN\",\"file\");\nMAXSPEED = global.get (\"MAXSPEED\",\"file\");\nMINSPEED = global.get (\"MINSPEED\",\"file\");\nACCEL = global.get (\"ACCEL\",\"file\");\nDECEL = global.get (\"DECEL\",\"file\");\nVM_KTHOLD = global.get (\"VM_KTHOLD\",\"file\");\nVM_KTRUN = global.get (\"VM_KTRUN\",\"file\");\nVM_KTACCEL = global.get (\"VM_KTACCEL\",\"file\");\nVM_KTDECEL = global.get (\"VM_KTDECEL\",\"file\");\nFSSPEED = global.get (\"FSSPEED\",\"file\");\nFSBOOST = global.get (\"FSBOOST\",\"file\");\nREVERSE = global.get (\"REVERSE\",\"file\");\nSAVE_EEPROM = global.get (\"SAVE_EEPROM\",\"file\");\nVM_PWMFREQ = global.get (\"VM_PWMFREQ\",\"file\");\nVM_STALL = global.get (\"VM_STALL\",\"file\");\nVM_VOLT_COMP = global.get (\"VM_VOLT_COMP\",\"file\");\nVM_BEMF_SLOPEL = global.get (\"VM_BEMF_SLOPEL\",\"file\");\nVM_BEMF_SPEEDCO = global.get (\"VM_BEMF_SPEEDCO\",\"file\");\nVM_BEMF_SLOPEHACC = global.get (\"VM_BEMF_SLOPEHACC\",\"file\");\nVM_BEMF_SLOPEHDEC = global.get (\"VM_BEMF_SLOPEHDEC\",\"file\");\nSTOP_HIZ = global.get (\"STOP_HIZ\",\"file\");\nSTOP_SOFT = global.get (\"STOP_SOFT\",\"file\");\n\nflow.set (\"HOST\",HOST);\nflow.set (\"MODE\",MODE);\nflow.set (\"STEPSIZE\",STEPSIZE);\nflow.set (\"OCD\",OCD);\nflow.set (\"OCDSHUTDOWN\",OCDSHUTDOWN);\nflow.set (\"MAXSPEED\",MAXSPEED);\nflow.set (\"MINSPEED\",MINSPEED);\nflow.set (\"ACCEL\",ACCEL);\nflow.set (\"DECEL\",DECEL);\nflow.set (\"VM_KTHOLD\",VM_KTHOLD);\nflow.set (\"VM_KTRUN\",VM_KTRUN);\nflow.set (\"VM_KTACCEL\",VM_KTACCEL);\nflow.set (\"VM_KTDECEL\",VM_KTDECEL);\nflow.set (\"FSSPEED\",FSSPEED);\nflow.set (\"FSBOOST\",FSBOOST);\nflow.set (\"REVERSE\",REVERSE);\nflow.set (\"SAVE_EEPROM\",SAVE_EEPROM);\nflow.set (\"VM_PWMFREQ\",VM_PWMFREQ);\nflow.set (\"VM_STALL\",VM_STALL);\nflow.set (\"VM_VOLT_COMP\",VM_VOLT_COMP);\nflow.set (\"VM_BEMF_SLOPEL\",VM_BEMF_SLOPEL);\nflow.set (\"VM_BEMF_SPEEDCO\",VM_BEMF_SPEEDCO);\nflow.set (\"VM_BEMF_SLOPEHACC\",VM_BEMF_SLOPEHACC);\nflow.set (\"VM_BEMF_SLOPEHDEC\",VM_BEMF_SLOPEHDEC);\nflow.set (\"STOP_HIZ\",STOP_HIZ);\nflow.set (\"STOP_SOFT\",STOP_SOFT);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 740,
+        "y": 220,
+        "wires": [
+            [
+                "e2876e51.5f3128"
+            ]
+        ]
+    },
+    {
+        "id": "654e0fab.a3eec8",
+        "type": "inject",
+        "z": "b5ea1fcd.80f85",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 100,
+        "y": 220,
+        "wires": [
+            [
+                "5f38c8de.d5ec28"
+            ]
+        ]
+    },
+    {
+        "id": "e2876e51.5f3128",
+        "type": "debug",
+        "z": "b5ea1fcd.80f85",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 1130,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "60c21777.de23c8",
+        "type": "debug",
+        "z": "b5ea1fcd.80f85",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 1130,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "66e762b8.a20bac",
+        "type": "change",
+        "z": "b5ea1fcd.80f85",
+        "name": "Store Velocity_Factor",
+        "rules": [
+            {
+                "t": "set",
+                "p": "#:(file)::VELOCITY_FACTOR",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 860,
+        "y": 420,
+        "wires": [
+            [
+                "60c21777.de23c8"
+            ]
+        ]
+    },
+    {
+        "id": "64d02a51.7d973c",
+        "type": "inject",
+        "z": "b5ea1fcd.80f85",
+        "name": "",
+        "topic": "",
+        "payload": ".95",
+        "payloadType": "num",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 90,
+        "y": 420,
+        "wires": [
+            [
+                "66e762b8.a20bac"
+            ]
+        ]
+    },
+    {
+        "id": "69e1eb32.30cb2c",
+        "type": "inject",
+        "z": "b5ea1fcd.80f85",
+        "name": "",
+        "topic": "",
+        "payload": "-9",
+        "payloadType": "num",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 90,
+        "y": 460,
+        "wires": [
+            [
+                "7bb9035c.0387bc"
+            ]
+        ]
+    },
+    {
+        "id": "7bb9035c.0387bc",
+        "type": "change",
+        "z": "b5ea1fcd.80f85",
+        "name": "Store Fudge_Factor",
+        "rules": [
+            {
+                "t": "set",
+                "p": "#:(file)::FUDGE_FACTOR",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 860,
+        "y": 460,
+        "wires": [
+            [
+                "1a59d896.7e2407"
+            ]
+        ]
+    },
+    {
+        "id": "1a59d896.7e2407",
+        "type": "debug",
+        "z": "b5ea1fcd.80f85",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 1130,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "cbc587ce.6748e8",
+        "type": "ui_button",
+        "z": "b5ea1fcd.80f85",
+        "name": "",
+        "group": "5707e1f4.7983a",
+        "order": 2,
+        "width": 3,
+        "height": 1,
+        "passthru": true,
+        "label": "Parms to Global.file",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 290,
+        "y": 180,
+        "wires": [
+            [
+                "40d5855.fdadb7c"
+            ]
+        ]
+    },
+    {
+        "id": "b2e58fe6.21cca8",
+        "type": "ui_button",
+        "z": "b5ea1fcd.80f85",
+        "name": "",
+        "group": "5707e1f4.7983a",
+        "order": 6,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Store VF",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "num",
+        "topic": "",
+        "x": 640,
+        "y": 400,
+        "wires": [
+            [
+                "66e762b8.a20bac"
+            ]
+        ]
+    },
+    {
+        "id": "b14fe56.0f11498",
+        "type": "ui_button",
+        "z": "b5ea1fcd.80f85",
+        "name": "",
+        "group": "5707e1f4.7983a",
+        "order": 8,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Store Fudge",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "num",
+        "topic": "",
+        "x": 650,
+        "y": 440,
+        "wires": [
+            [
+                "7bb9035c.0387bc"
+            ]
+        ]
+    },
+    {
+        "id": "5f38c8de.d5ec28",
+        "type": "ui_button",
+        "z": "b5ea1fcd.80f85",
+        "name": "",
+        "group": "5707e1f4.7983a",
+        "order": 1,
+        "width": 3,
+        "height": 1,
+        "passthru": true,
+        "label": "Parms to Flow.file",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 290,
+        "y": 220,
+        "wires": [
+            [
+                "52003396.744fb4"
+            ]
+        ]
+    },
+    {
+        "id": "aea3f06.6b0d79",
+        "type": "http request",
+        "z": "b5ea1fcd.80f85",
+        "name": "Get status",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": false,
+        "url": "http://172.16.0.230/api/motor/state",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 550,
+        "y": 700,
+        "wires": [
+            [
+                "8e19f432.6161b"
+            ]
+        ]
+    },
+    {
+        "id": "1cd4966f.b85c4a",
+        "type": "inject",
+        "z": "b5ea1fcd.80f85",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 100,
+        "y": 700,
+        "wires": [
+            [
+                "aea3f06.6b0d79"
+            ]
+        ]
+    },
+    {
+        "id": "8e19f432.6161b",
+        "type": "debug",
+        "z": "b5ea1fcd.80f85",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 770,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "49a6aac5.93c9cc",
+        "type": "inject",
+        "z": "b5ea1fcd.80f85",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 100,
+        "y": 820,
+        "wires": [
+            [
+                "b4e4f20c.3ab208"
+            ]
+        ]
+    },
+    {
+        "id": "b4e4f20c.3ab208",
+        "type": "http request",
+        "z": "b5ea1fcd.80f85",
+        "name": "set speed",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": false,
+        "url": "http://172.16.0.230/api/motor/run?stepss=1400",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 540,
+        "y": 820,
+        "wires": [
+            [
+                "58f62e49.938e58"
+            ]
+        ]
+    },
+    {
+        "id": "9272d03a.800b78",
+        "type": "http request",
+        "z": "b5ea1fcd.80f85",
+        "name": "get config",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": false,
+        "url": "http://172.16.0.230/api/motor/get",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 540,
+        "y": 760,
+        "wires": [
+            [
+                "40dbb798.a2ded"
+            ]
+        ]
+    },
+    {
+        "id": "58f62e49.938e58",
+        "type": "debug",
+        "z": "b5ea1fcd.80f85",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 770,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "40dbb798.a2ded",
+        "type": "debug",
+        "z": "b5ea1fcd.80f85",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 770,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "441add34.627244",
+        "type": "inject",
+        "z": "b5ea1fcd.80f85",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 100,
+        "y": 760,
+        "wires": [
+            [
+                "9272d03a.800b78"
+            ]
+        ]
+    },
+    {
+        "id": "bc7b433d.de8f18",
+        "type": "inject",
+        "z": "b5ea1fcd.80f85",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 100,
+        "y": 880,
+        "wires": [
+            [
+                "eb83f239.ffbbf8"
+            ]
+        ]
+    },
+    {
+        "id": "eb83f239.ffbbf8",
+        "type": "http request",
+        "z": "b5ea1fcd.80f85",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": false,
+        "url": "",
+        "persist": false,
+        "authType": "",
+        "x": 550,
+        "y": 880,
+        "wires": [
+            [
+                "b91e8a0a.d799d8"
+            ]
+        ]
+    },
+    {
+        "id": "b91e8a0a.d799d8",
+        "type": "debug",
+        "z": "b5ea1fcd.80f85",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 770,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "8c2a351a.f91628",
+        "type": "inject",
+        "z": "b5ea1fcd.80f85",
+        "name": "",
+        "topic": "",
+        "payload": ".07",
+        "payloadType": "num",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 90,
+        "y": 500,
+        "wires": [
+            [
+                "e77afeee.0f7ff"
+            ]
+        ]
+    },
+    {
+        "id": "3cb578af.ec26a",
+        "type": "ui_button",
+        "z": "b5ea1fcd.80f85",
+        "name": "",
+        "group": "5707e1f4.7983a",
+        "order": 10,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Store Stepsize",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "2",
+        "payloadType": "num",
+        "topic": "",
+        "x": 660,
+        "y": 480,
+        "wires": [
+            [
+                "e77afeee.0f7ff"
+            ]
+        ]
+    },
+    {
+        "id": "e77afeee.0f7ff",
+        "type": "change",
+        "z": "b5ea1fcd.80f85",
+        "name": "Store Stepsize",
+        "rules": [
+            {
+                "t": "set",
+                "p": "#:(file)::ANTENNA_STEPSIZE",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 840,
+        "y": 500,
+        "wires": [
+            [
+                "6eb14b91.bc10b4"
+            ]
+        ]
+    },
+    {
+        "id": "6eb14b91.bc10b4",
+        "type": "debug",
+        "z": "b5ea1fcd.80f85",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 1130,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "bd453ad5.395f48",
+        "type": "ui_text_input",
+        "z": "b5ea1fcd.80f85",
+        "name": "Input VF",
+        "label": "VF",
+        "tooltip": "",
+        "group": "5707e1f4.7983a",
+        "order": 5,
+        "width": 3,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": "0",
+        "topic": "",
+        "x": 380,
+        "y": 400,
+        "wires": [
+            [
+                "b2e58fe6.21cca8"
+            ]
+        ]
+    },
+    {
+        "id": "bdb2ce90.87c878",
+        "type": "ui_text_input",
+        "z": "b5ea1fcd.80f85",
+        "name": "Input Fudge",
+        "label": "Fudge",
+        "tooltip": "",
+        "group": "5707e1f4.7983a",
+        "order": 7,
+        "width": 3,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": "0",
+        "topic": "",
+        "x": 390,
+        "y": 440,
+        "wires": [
+            [
+                "b14fe56.0f11498"
+            ]
+        ]
+    },
+    {
+        "id": "4aa69d49.445884",
+        "type": "ui_text_input",
+        "z": "b5ea1fcd.80f85",
+        "name": "Antenna_Stepsize",
+        "label": "StepSize",
+        "tooltip": "",
+        "group": "5707e1f4.7983a",
+        "order": 9,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "mode": "text",
+        "delay": "0",
+        "topic": "",
+        "x": 410,
+        "y": 480,
+        "wires": [
+            [
+                "3cb578af.ec26a"
+            ]
+        ]
+    },
+    {
+        "id": "b3d55657.ae01c",
+        "type": "comment",
+        "z": "b5ea1fcd.80f85",
+        "name": "Edit the Functions to change Motor Parms.",
+        "info": "",
+        "x": 620,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "79b789f6.3eee78",
+        "type": "comment",
+        "z": "b5ea1fcd.80f85",
+        "name": "Input and store various parameters - buttons not implemented yet - use Injects for now.",
+        "info": "",
+        "x": 340,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "31d86859.f34918",
+        "type": "comment",
+        "z": "b5ea1fcd.80f85",
+        "name": "Experimenting with single motor parameters - included in the big dumps at top.",
+        "info": "",
+        "x": 320,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "5707e1f4.7983a",
+        "type": "ui_group",
+        "z": "",
+        "name": "Utilities",
+        "tab": "37e5f79a.58b3c",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "37e5f79a.58b3c",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Utilites",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
