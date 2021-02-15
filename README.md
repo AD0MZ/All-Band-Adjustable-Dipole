@@ -81,6 +81,11 @@ Open Source – Using Open Source Tools
   
 ![All Band Adjustable Dipole](Collateral/11.%20Production%20Assembly%20Exploded.png)
 
+# First Printed Parts
+### Note:  First 3Dp project! Trying different things.
+
+![All Band Adjustable Dipole](Collateral/15.%20%20Parts%20Laid%20Out.JPG)
+
 
 # VNA (un-calibrated :-)  ) scanning 13Mhz to 15Mhz when antenna is tuned to 14.220 Mhz
 
