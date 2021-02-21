@@ -16,7 +16,7 @@
 - My workflow...  (Some not implemented yet  :-)   )
   - Draw the proposed system in 2D using TurboCad to get good measurements and to help visualize.
     - Tried FreeCad, TinkerCad, and others - the learining curve was too steep after 20 years of TurboCad.
-      -  After two days with FreeCad and giving up,  Had a set of capstan spools completed in a few hours!
+      -  After two days with FreeCad and giving up,  Had a set of capstan spools completed with OpenSCAD in a few hours!
   - Design the solid parts and combine into a module.
   - Design the shapes that will be subtracted for holes and such and place into a module or two.
   - Combine the two into another module with "difference ()"
