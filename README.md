@@ -46,8 +46,8 @@ Open Source – Using Open Source Tools
   - OpenSCAD.  Wanted to learn it.  Experienced TurboCad Deluxe user, but it lacks proper 3D tools.
     - Tried FreeCad, but found it combersome.  (Tried others, but like the program-like build proceess.  Minutes to first useful ogject.
   - TurboCad.  Useful for initial 2D design to get precise measurements.
-  - Wifi-Stepper Controller:  As a beginner with stepper control, and wanting advanced feactures like acceleration and crash detection.
-    - The Wifi Stepper removes the comlexity and provides a few simple interaces.  HTML, Bash, and Mqtt.
+  - Wifi-Stepper Controller:  As a beginner with stepper control, Advanced feactures like acceleration and crash detection wre beyond me.
+    - The Wifi Stepper removes the comlexity of comprehensive control and also provides simple interaces.  HTML, Bash, and Mqtt.
 
 # Initial Concept:
 
