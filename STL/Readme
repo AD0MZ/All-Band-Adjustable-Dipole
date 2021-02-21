@@ -1,0 +1,2 @@
+The main case file gives a manifold error in OpenSCAD, util a very minor hole is eliminated.  (Screw_holes).
+Other tools proclaim it OK, and it prints fine.  On the list to debug further, but since I dropped the entire tuner onto concrete from high up and cracked it - I wanted to reprint instead of debug.
