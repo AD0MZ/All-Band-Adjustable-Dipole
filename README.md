@@ -81,6 +81,9 @@ Open Source – Using Open Source Tools
   - ~ 260 feet of nylon or dacron 60lb test fishing line.
   - (4) pulleys (you can print them too), and some rope.
   - (2) 4mm x .5mm x 30mm copper strips.  (Wire guide slide surfaces.)
+  - Glue compatible with plastic type.  (Top fasten top spool to middle spool.  Alignment pegs are on parts.)
+    - Could add bosses and holes for screws - nervous about clearance for first unit. 
+    - Bosses and holes on the improvment list.
   
   - Time to print:  ~40 hours.
   
