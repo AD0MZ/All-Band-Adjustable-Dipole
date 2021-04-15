@@ -166,3 +166,9 @@ Final design:
 Contemplated design:
 ![All Band Adjustable Dipole](Collateral/Jim-2.png)
 
+
+# It would be fun to model the "insulated wire - central commutator" design to see if it would be tunable across all bands with wierd lengths.
+- Software could then pick the memorized lengths for each band with micro-tuning control still available.
+
+
+
