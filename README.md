@@ -164,5 +164,5 @@ Final design:
 ![All Band Adjustable Dipole](Collateral/Jim-1.png)
 
 Contemplated design:
-![All Band Adjustable Dipole](Collateral/Jim-1.png)
+![All Band Adjustable Dipole](Collateral/Jim-2.png)
 
