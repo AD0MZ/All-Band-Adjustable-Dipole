@@ -144,3 +144,20 @@ Open Source – Using Open Source Tools
 
 ![All Band Adjustable Dipole](Collateral/2.%20%20Assembled%20Working%20System.png)
 
+
+# Arrangment of commutators (brushes) with elements (wires).
+- A few people have asked me why the brushes are on the "outside" of the capstan mechanism.
+- One friend asked about the use of bare wire rather than insulated.
+    - It turns out that the location of the brushes and the issues of insulated (or un-insulated) wire are related.
+
+Early on, I had envisioned internal brushes on a commutating ring like an automotive alternator, 
+with the use of insulated wire elements.
+- I soon realised that the coiled-up element wires would make an excellent inductor at the frequencies we operate at.
+- I was uncertain of how the brushes would wear, and how certain meterials might conduct at RF. 
+    - I wanted to have an easy way to change them and experiment.
+- Using un-unsulated wire and external brushes solved every fatal problem and only introducfed a couple of minor ones.
+    _ (1.  Corrsion    2.  Loss of signal to things that touch the wire like leaves? )
+    
+Here are two diagrams I used to demonstrate the issues to a very smart friend.
+
+
