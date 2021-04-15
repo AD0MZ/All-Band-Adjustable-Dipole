@@ -163,6 +163,6 @@ Here are two diagrams I used to demonstrate the issues to a very smart friend.
 Final design:
 ![All Band Adjustable Dipole](Collateral/Jim-1.png)
 
-Conteplated design:
+Contemplated design:
 ![All Band Adjustable Dipole](Collateral/Jim-1.png)
 
