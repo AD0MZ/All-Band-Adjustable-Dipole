@@ -76,14 +76,17 @@ Open Source – Using Open Source Tools
 # Bom:
   - (1) 8x22x7 MM sealed scateboard boaring
   - Assorted M3 screws and 16 thin sqaure M3 nuts.
+    - (14) M3-10 Button Head Screws (or capscrews).
+    - (4) M3-35 Button Head Screws (or capscrews).
+    - (16) M3 562 (S2) Thin - Flat Square nuts.
   - (2) Generic (Makita CB-303 in my case) power tool brushes.
-  - ~130 feet of 18 guage tinned (less oxidation) wire.
+  - ~ 130 feet of 18 guage tinned (less oxidation) wire.
   - ~ 260 feet of nylon or dacron 60lb test fishing line.
-  - (4) pulleys (you can print them too), and some rope.
-  - (2) 4mm x .5mm x 30mm copper strips.  (Wire guide slide surfaces.)
+  - (4) pulleys (you can print them too), and some lightweight rope.
+  - (2) 4mm x 1mm x 31mm copper strips.  (Wire guide slide surfaces.)
   - Glue compatible with plastic type.  (Top fasten top spool to middle spool.  Alignment pegs are on parts.)
-    - Could add bosses and holes for screws - nervous about clearance for first unit. 
-    - Bosses and holes on the improvment list.
+    - Could add bosses and holes for screws on this part - was nervous about clearance for first unit. 
+    - Bosses and holes on the improvment list.  (The part broke before the glue let go in my testing.)
   
   - Time to print:  ~40 hours.
   
