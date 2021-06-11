@@ -79,6 +79,7 @@ Open Source – Using Open Source Tools
     - (14) M3-10 Button Head Screws (or capscrews).
     - (4) M3-35 Button Head Screws (or capscrews).
     - (16) M3 562 (S2) Thin - Flat Square nuts.
+    - (2) M3 hex nuts.
   - (2) Generic (Makita CB-303 in my case) power tool brushes.
   - ~ 130 feet of 18 guage tinned (less oxidation) wire.
   - ~ 260 feet of nylon or dacron 60lb test fishing line.
