@@ -43,7 +43,7 @@ Open Source – Using Open Source Tools
 
 **Disclaimer:  I am a beginner with the tools I chose for this project, so it's as much a learning process as a production process.
   - I spent a lot of time quantifying and tuning my printer to make accurate parts.  The SCAD and STL files in this repostiory reflect
-    - pretty tight tolerances.  (The parts from my Prusa Mk3S had a nice friction fit and assembled without modification.)
+    pretty tight tolerances.  (The parts from my Prusa Mk3S had a nice friction fit and assembled without modification.)
     - (Parts printed on my friends Ender Pro wer a bit too bit and required a bit of sanding and filing.)
     - If you use the STL's, print the first three layers of a few of the parts to see if things are too tight.
 
