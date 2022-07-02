@@ -20,7 +20,7 @@ Open Source – Using Open Source Tools
     - Particularly the concepts of Gain and Directivity when considering conservation of energy.
   - Recently interested in how Resonance and SWR affect Efficient Radiation.
   - Was surprised at how much better a friend’s antenna performed after a slight pruning.
-    - We both noted how much better his dipole worked comparted to his G5RV or his HexBeam Spiderweb.
+    - We both noted how much better his dipole worked compared to his G5RV or his HexBeam Spiderweb.
   - Began thinking of an “automatic” self-pruning-dipole.
   - Hangar Door Openers!  
     - Realized that a creatively constructed “Capstan” combined with a clothesline-like element geometry would simplify the mechanics.
