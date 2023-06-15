@@ -1,10 +1,10 @@
 # All-Band-Adjustable-Dipole
 ### Motorized 10-80 Meter Adjustable Dipole 
 
-A Self-Contained – Motorized Dipole Antenna System
-Uses a Web-Based APP to set Element Lengths
-Robust support for CAT and other Automation
-Open Source – Using Open Source Tools
+-  A Self-Contained – Motorized Dipole Antenna System
+-  Uses a Web-Based APP to set Element Lengths.  
+-  Robust support for CAT and other Automation
+-  Open Source – Using Open Source Tools
 
 # Finished Product and APP!
 - Antenna Winch on Tripod Mount.
@@ -31,28 +31,28 @@ Open Source – Using Open Source Tools
   - Article by AE4YW – Radiation is more important than SWR.
   - The RTV 80 by W4QJP and KC4TAQ  is a proven example of a complete adjustable system (But manually operated with adjustable ropes).
   - VA2ERY used a literal incarnation of a clothesline to move the feed-point of a folded dipole.
-    - (Simple, but requires a balanced feedline and a tuner.)
+    - (Simple, but requires a balanced feed-line and a tuner.)
   - Collins Aerospace dual-drum winch for wire dipoles (Model 637-T1).
   - SteppIr.  Very successful stepper motor controlled Yagi’s, etc.
     - An automated – multi-element “Tape Measure” system if you look inside.
 
 
-#### Status:  Two protoypes contructed and tested.  
-  - Ready for constructive input and suggestions for improvment.  (More weatherproof?  Better / Simpler Stepper Control?  Etc?)
+#### Status:  Two protoypes constructed and tested.  
+  - Ready for constructive input and suggestions for improvement.  (More weatherproof?  Better / Simpler Stepper Control?  Etc?)
  
 
 **Disclaimer:  I am a beginner with the tools I chose for this project, so it's as much a learning process as a production process.
-  - I spent a lot of time quantifying and tuning my printer to make accurate parts.  The SCAD and STL files in this repostiory reflect
+  - I spent a lot of time quantifying and tuning my printer to make accurate parts.  The SCAD and STL files in this repository reflect
     pretty tight tolerances.  (The parts from my Prusa Mk3S had a nice friction fit and assembled without modification.)
     - (Parts printed on my friends Ender Pro were too big and required sanding and filing.)
     - If you use the STL's, print the first three layers of a few of the parts to see if things fit.
 
 #### Tools Used:
   - OpenSCAD.  Wanted to learn it.  Experienced TurboCad Deluxe user, but it lacks proper 3D tools.
-    - Tried FreeCad, but found it combersome.  (Tried others, but like the program-like build proceess.  Minutes to first useful ogject.
+    - Tried FreeCad, but found it cumbersome.  (Tried others, but like the program-like build process.  Minutes to first useful object.
   - TurboCad.  Useful for initial 2D design to get precise measurements.
-  - Wifi-Stepper Controller:  As a beginner with stepper control, Advanced feactures like acceleration and crash detection wre beyond me.
-    - The Wifi Stepper removes the comlexity of comprehensive control and also provides simple interaces.  HTML, Bash, and Mqtt.
+  - Wifi-Stepper Controller:  As a beginner with stepper control, Advanced feactures like acceleration and crash detection were beyond me.
+    - The Wifi Stepper removes the complexity of comprehensive control and also provides simple interaces.  HTML, Bash, and Mqtt.
 
 # Initial Concept:
 
@@ -73,26 +73,26 @@ Open Source – Using Open Source Tools
 # Animation of a Sample Application.  (Node-Red Dashboard)
 
 - The Flow lets the user select a band, then fine adjust it.  
-  - A simple function calcuates steps via simple math, and sends an absolute position to the motor. 
+  - A simple function calculates steps via simple math, and sends an absolute position to the motor. 
   
 ![All Band Adjustable Dipole](Collateral/6.%20%20Application%20Operation.mov)
 
 
 # Bom:
-  - (1) 8x22x7 MM sealed scateboard boaring
-  - Assorted M3 screws and 16 thin sqaure M3 nuts.
-    - (14) M3-10 Button Head Screws (or capscrews).
-    - (4) M3-35 Button Head Screws (or capscrews).
+  - (1) 8x22x7 MM sealed skateboard bearing
+  - Assorted M3 screws and 16 thin square M3 nuts.
+    - (14) M3-10 Button Head Screws (or cap-screws).
+    - (4) M3-35 Button Head Screws (or cap-screws).
     - (16) M3 562 (S2) Thin - Flat Square nuts.
     - (2) M3 hex nuts.
   - (2) Generic (Makita CB-303 in my case) power tool brushes.
-  - ~ 130 feet of 18 guage tinned (less oxidation) wire.
-  - ~ 260 feet of nylon or dacron 60lb test fishing line.
+  - ~ 130 feet of 18 gauge tinned (less oxidation) wire.
+  - ~ 260 feet of Nylon or Dacron 60lb test fishing line.
   - (4) pulleys (you can print them too), and some lightweight rope.
   - (2) 4mm x 1mm x 31mm copper strips.  (Wire guide slide surfaces.)
   - Glue compatible with plastic type.  (Top fasten top spool to middle spool.  Alignment pegs are on parts.)
     - Could add bosses and holes for screws on this part - was nervous about clearance for first unit. 
-    - Bosses and holes on the improvment list.  (The part broke before the glue let go in my testing.)
+    - Bosses and holes on the improvement list.  (The part broke before the glue let go in my testing.)
   
   - Time to print:  ~40 hours.
   
@@ -117,7 +117,7 @@ Open Source – Using Open Source Tools
 # Brush Cartridge
 - External for easy replacement.
   - Wires from balun or coax connect to cartridge only.  (Hole in bottom)
-  - Optional base can house a balun or other gear, wire feeds through botton of both parts to prevent water ingress.
+  - Optional base can house a balun or other gear, wire feeds through bottom of both parts to prevent water ingress.
 
 ![All Band Adjustable Dipole](Collateral/17.%20%20Cart%20Compared%20to%20Brush.JPG)
 
@@ -143,29 +143,29 @@ Open Source – Using Open Source Tools
 
 # Similar Antennas / Prior Work
 - Collins 637t-1.
-- Center Adjsutable Folded Clothsline Dipole.
+- Center Adjustable Folded Clothesline Dipole.
 - RTV 80 Inverted V.
 
 ![All Band Adjustable Dipole](Collateral/25.%20%20Similar-Designs.png)
 
 
-# Winch / Controller Closup.
+# Winch / Controller Closeup.
 
 ![All Band Adjustable Dipole](Collateral/2.%20%20Assembled%20Working%20System.png)
 
 
-# Arrangment of commutators (brushes) with elements (wires).
+# Arrangement of commutators (brushes) with elements (wires).
 - A few people have asked me why the brushes are on the "outside" of the capstan mechanism.
 - One friend asked about the use of bare wire rather than insulated.
     - It turns out that the location of the brushes and the issues of insulated (or un-insulated) wire are related.
 
 Early on, I had envisioned internal brushes on a commutating ring like an automotive alternator, 
 with the use of insulated wire elements.
-- I soon realised that the coiled-up element wires would make an excellent inductor at the frequencies we operate at.
+- I soon realized that the coiled-up element wires would make an excellent inductor at the frequencies we operate at.
 - I was uncertain of how the brushes would wear, and how certain meterials might conduct at RF. 
     - I wanted to have an easy way to change them and experiment.
-- Using un-unsulated wire and external brushes solved every fatal problem and only introducfed a couple of minor ones.
-    _ (1.  Corrsion    2.  Loss of signal to things that touch the wire like leaves? )
+- Using un-insulated wire and external brushes solved every fatal problem and only introduced a couple of minor ones.
+    _ (1.  Corrosion    2.  Loss of signal to things that touch the wire like leaves? )
     
 Here are two diagrams I used to demonstrate the issues to a very smart friend.
 
@@ -178,7 +178,7 @@ Contemplated design:
 
 # It would be fun to model the "insulated wire - central commutator" design to see if it would be tunable across all bands with wierd  but shorter element lengths.
 - Software could then pick the memorized lengths for each band with micro-tuning control still available.
-- The coiled wire on spools could act as loading coils, with more coil at shorter elemenet lenths.
+- The coiled wire on spools could act as loading coils, with more coil at shorter element lengths.
 
 
 
