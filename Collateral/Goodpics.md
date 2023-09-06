@@ -24,7 +24,8 @@
 -  A Shop Vac </br>
 <a href="./GoodPics/Shop-Vac.jpg"> <img src="./GoodPics/ThumbNails/Shop-Vac.jpg"> </a> </br>
    
-- A 1950 Classic Singer Featherweight.  Collectable (good it!)
+- A 1950 Classic Singer Featherweight model 221.  Collectable (Google it!) 
+  - Includes Offcial Singer worktable.  (Cutout for Machine for flush sewing action!)
   - Rebuilt with the FeatherWeight Doctor's kit.  [See Featherweightdoctor.com](https://featherweightdoctor.com)</br>
 <a href="./GoodPics/Singer.jpg"> <img src="./GoodPics/ThumbNails/Singer.jpg"> </a> </br>
    
