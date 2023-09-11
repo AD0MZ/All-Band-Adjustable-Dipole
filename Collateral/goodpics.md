@@ -90,20 +90,20 @@
 </tr>
 
 <td valign="top">
-<a href="./GoodPics/Electrical-Supplies-1.jpg">
-<img src="./GoodPics/ThumbNails/Electrical-Supplies-1.jpg">
-</a>
-</td>
-
-<td valign="top">
-<a href="./GoodPics/Electrical-Supplies-2.jpg">
-<img src="./GoodPics/ThumbNails/Electrical-Supplies-2.jpg">
-</a>
-</td>
-
-<td valign="top">
 <a href="./GoodPics/Euphamia.jpg">
 <img src="./GoodPics/ThumbNails/Euphamia.jpg">
+</a>
+</td>
+
+<td valign="top">
+<a href="./GoodPics/Turntable.jpg">
+<img src="./GoodPics/ThumbNails/Turntable.jpg">
+</a>
+</td>
+
+<td valign="top">
+<a href="./GoodPics/Workmate.jpg">
+<img src="./GoodPics/ThumbNails/Workmate.jpg">
 </a>
 </td>
 </tr>
@@ -188,7 +188,6 @@
 </a>
 </td>
 
-<tr>
 <td valign="top">
 <a href="./GoodPics/Speakers.jpg">
 <img src="./GoodPics/ThumbNails/Speakers.jpg">
@@ -217,7 +216,6 @@
 </a>
 </td>
 
-<tr>
 <td valign="top">
 <a href="./GoodPics/Table-Saw.jpg">
 <img src="./GoodPics/ThumbNails/Table-Saw.jpg">
@@ -241,35 +239,8 @@
 </td>
 
 <td valign="top">
-<a href="./GoodPics/Telescope-2.jpg">
-<img src="./GoodPics/ThumbNails/Telescope-2.jpg">
-</a>
-</td>
-
-<td valign="top">
 <a href="./GoodPics/Tool-Cabinet-1.jpg">
 <img src="./GoodPics/ThumbNails/Tool-Cabinet-1.jpg">
-</a>
-</td>
-</tr>
-</table>
-
-<table>
-<tr>
-<th>x</td>
-<th>x</td>
-<th>x</td>
-
-<td valign="top">
-<a href="./GoodPics/Torch-2.jpg">
-<img src="./GoodPics/ThumbNails/Torch-2.jpg">
-</a>
-</td>
-
-<tr>
-<td valign="top">
-<a href="./GoodPics/Torch.jpg">
-<img src="./GoodPics/ThumbNails/Torch.jpg">
 </a>
 </td>
 
@@ -285,20 +256,20 @@
 <tr>
 <th>x</td>
 <th>x</td>
-<th>x</td>
 
+</tr>
 <td valign="top">
-<a href="./GoodPics/Turntable.jpg">
-<img src="./GoodPics/ThumbNails/Turntable.jpg">
+<a href="./GoodPics/Torch-2.jpg">
+<img src="./GoodPics/ThumbNails/Torch-2.jpg">
 </a>
 </td>
 
 <td valign="top">
-<a href="./GoodPics/Workmate.jpg">
-<img src="./GoodPics/ThumbNails/Workmate.jpg">
+<a href="./GoodPics/Torch.jpg">
+<img src="./GoodPics/ThumbNails/Torch.jpg">
 </a>
 </td>
-
+</tr>
 
 </table>
 
