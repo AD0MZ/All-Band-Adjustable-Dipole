@@ -201,8 +201,7 @@
 <th>CraftsMan Tool Chest</td>
 <th>Restored Marx HO Train</br>Rare Classic with Extra Track, etc.)</td>
 </tr>
-
-<tr>
+<tr>  
 <td valign="top">
 <a href="./GoodPics/Telescope-1.jpg">
 <img src="./GoodPics/ThumbNails/Telescope-1.jpg">
@@ -221,6 +220,7 @@
 </a>
 </td>
 </tr>
+
 </table>
 
 <table>
