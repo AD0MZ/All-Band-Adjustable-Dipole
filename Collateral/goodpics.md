@@ -113,9 +113,9 @@
 <table>
 
 <tr>
-<th>x</td>
-<th>x</td>
-<th>x</td>
+<th>Mac Pro - Core duo, new battery (As new, no trashware - good for email and web)</td>
+<th>Yamaha Receiver (part of set)</td>
+<th>Shop Vac</td>
 </tr>
 
 <tr>
@@ -132,11 +132,10 @@
 </td>
 
 <td valign="top">
-<a href="./GoodPics/Sansui.jpg">
-<img src="./GoodPics/ThumbNails/Sansui.jpg">
+<a href="./GoodPics/Shop-Vac.jpg">
+<img src="./GoodPics/ThumbNails/Shop-Vac.jpg">
 </a>
 </td>
-</tr>
 
 </table>
 
@@ -144,21 +143,8 @@
 <tr>
 <th>x</td>
 <th>x</td>
-<th>x</td>
 </tr>
 
-<tr>
-<td valign="top">
-<a href="./GoodPics/Selectric.jpg">
-<img src="./GoodPics/ThumbNails/Selectric.jpg">
-</a>
-</td>
-
-<td valign="top">
-<a href="./GoodPics/Shop-Vac.jpg">
-<img src="./GoodPics/ThumbNails/Shop-Vac.jpg">
-</a>
-</td>
 
 <td valign="top">
 <a href="./GoodPics/rug.jpg">
