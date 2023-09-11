@@ -59,7 +59,8 @@
 <th>x</td>
 <th>x</td>
 </tr>
-
+  
+<tr>
 <td valign="top">
 <a href="./GoodPics/Bolex-3.jpg">
 <img src="./GoodPics/ThumbNails/Bolex-3.jpg">
@@ -72,12 +73,12 @@
 </a>
 </td>
 
-<tr>
 <td valign="top">
 <a href="./GoodPics/Corn-Planter.jpg">
 <img src="./GoodPics/ThumbNails/Corn-Planter.jpg">
 </a>
 </td>
+</tr>
 
 </table>
 
@@ -100,12 +101,12 @@
 </a>
 </td>
 
-<tr>
 <td valign="top">
 <a href="./GoodPics/Euphamia.jpg">
 <img src="./GoodPics/ThumbNails/Euphamia.jpg">
 </a>
 </td>
+</tr>
 
 </table>
 
@@ -158,6 +159,13 @@
 <img src="./GoodPics/ThumbNails/Shop-Vac.jpg">
 </a>
 </td>
+
+<td valign="top">
+<a href="./GoodPics/rug.jpg">
+<img src="./GoodPics/ThumbNails/rug.jpg">
+</a>
+</td>
+</tr>
 </table>
 
 <table>
@@ -291,12 +299,6 @@
 </a>
 </td>
 
-<td valign="top">
-<a href="./GoodPics/rug.jpg">
-<img src="./GoodPics/ThumbNails/rug.jpg">
-</a>
-</td>
-</tr>
 
 </table>
 
