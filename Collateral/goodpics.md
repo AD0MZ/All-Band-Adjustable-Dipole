@@ -2,7 +2,7 @@
 <tr>
 <th>1970's Sansui 55 Watt Audiopile Amp  </td>
 <th>Print of Famous Guardian Angel Painting</td>
-<th>15 Speed Bike - Was called a "Girls Bike" back in the days.</td>
+<th>15 Speed Bike</br>Was called a "Girls Bike" back in the days.</td>
 </tr>
 
 <tr>
@@ -85,7 +85,7 @@
 <table>
 <tr>
 <th>Portrait of Euphamia Strandjord (I Think)</td>
-<th>Techniques Classic TUrntable with Audio Technica Cartridge</td>
+<th>Technics Classic Turntable </br>Audio Technica Cartridge</td>
 <th>Workmate Woodworking Stand</td>
 </tr>
 
@@ -113,7 +113,7 @@
 <table>
 
 <tr>
-<th>Mac Pro - Core duo, new battery (As new, no trashware - good for email and web)</td>
+<th>Mac Pro - Core duo</br> New battery</br>As new, no trashware</br>Good for email and web)</td>
 <th>Yamaha Receiver (part of set)</td>
 <th>Shop Vac</td>
 </tr>
@@ -141,8 +141,9 @@
 
 <table>
 <tr>
-<th>x</td>
-<th>x</td>
+<th>Navajo Rug (Two Hills)</td>
+<th>Singer Featherweight (Restored)</td>
+  <th>Sony 5 disk CD Player</th>
 </tr>
 
 <tr>
@@ -169,8 +170,8 @@
 
 <table>
 <tr>
-<th>Speakers - Klipsh Forte (Mellow -- Classical Music, on left), Class Pioneer HPM 100 (Crisp -- Rock, etc. on  right)</td>
-<th>Lenovo T510 Busines Class Laptop (As new - Clean)</td>
+<th>Speakers - Klipsh Forte  </br>MellowClassical Music, on left)</br></br>Classic Pioneer HPM 100 </br>Google Them!</br>(Crisp -- Rock, etc. on  right)</td>
+<th>Lenovo T510 Busines Class Laptop</br> (As new - Clean)</td>
 <th>Table Saw (Recently refurbished)</td>
 </table>tr>
 <tr>
@@ -198,7 +199,7 @@
 <tr>
 <th>Celeston Refracting Telescope</td>
 <th>CraftsMan Tool Chest</td>
-<th>Restored Marx HO Train (Classic with Extra Track, etc.)</td>
+<th>Restored Marx HO Train</th>br>Rare Classic with Extra Track, etc.)</td>
 </tr>
 
 <tr>
