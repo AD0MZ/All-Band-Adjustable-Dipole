@@ -145,13 +145,12 @@
 <th>x</td>
 </tr>
 
-
+<tr>
 <td valign="top">
 <a href="./GoodPics/rug.jpg">
 <img src="./GoodPics/ThumbNails/rug.jpg">
 </a>
 </td>
-</tr>
 
 <td valign="top">
 <a href="./GoodPics/Singer.jpg">
@@ -170,8 +169,8 @@
 <table>
 <tr>
 <th>Speakers - Klipsh Forte (Mellow -- Classical Music, on left), Class Pioneer HPM 100 (Crisp -- Rock, etc. on  right)</td>
-<th>x</td>
-<th>x</td>
+<th>Lenovo T510 Busines Class Laptop (As new - Clean)</td>
+<th>Table Saw (Recently refurbished)</td>
 </tr>
 
 <td valign="top">
