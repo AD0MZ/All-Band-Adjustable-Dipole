@@ -90,8 +90,8 @@
 </tr>
 
 <td valign="top">
-<a href="./GoodPics/Electrical- Supplies-1.jpg">
-<img src="./GoodPics/ThumbNails/Electrical- Supplies-1.jpg">
+<a href="./GoodPics/Electrical-Supplies-1.jpg">
+<img src="./GoodPics/ThumbNails/Electrical-Supplies-1.jpg">
 </a>
 </td>
 
