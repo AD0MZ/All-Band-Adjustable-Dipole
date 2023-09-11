@@ -164,6 +164,7 @@
 </a>
 </td>
 </tr>
+
 </table>
 
 <table>
@@ -171,14 +172,13 @@
 <th>Speakers - Klipsh Forte (Mellow -- Classical Music, on left), Class Pioneer HPM 100 (Crisp -- Rock, etc. on  right)</td>
 <th>Lenovo T510 Busines Class Laptop (As new - Clean)</td>
 <th>Table Saw (Recently refurbished)</td>
-</tr>
-
+</table>tr>
+<tr>
 <td valign="top">
 <a href="./GoodPics/Speakers.jpg">
 <img src="./GoodPics/ThumbNails/Speakers.jpg">
 </a>
 </td>
-</tr>
 
 <td valign="top">
 <a href="./GoodPics/T510.jpg">
@@ -196,9 +196,9 @@
 
 <table>
 <tr>
-<th>x</td>
-<th>x</td>
-<th>x</td>
+<th>Celeston Refracting Telescope</td>
+<th>CraftsMan Tool Chest</td>
+<th>Restored Marx HO Train (Classic with Extra Track, etc.)</td>
 </tr>
 
 <tr>
@@ -224,8 +224,8 @@
 
 <table>
 <tr>
-<th>x</td>
-<th>x</td>
+<th>Acessories for Acetaline Torch</td>
+<th>Acetaline Torch with Owned Tanks</td>
 
 </tr>
 <td valign="top">
