@@ -1,8 +1,8 @@
 <table>
 <tr>
-<th>x</td>
-<th>x</td>
-<th>x</td>
+<th>1970's Sansui 55 Watt Audiopile Amp  </td>
+<th>Print of Famous Guardian Angel Painting</td>
+<th>15 Speed Bike - Was called a "Girls Bike" back in the days.</td>
 </tr>
 
 <tr>
@@ -27,9 +27,9 @@
 
 <table>
 <tr>
-<th>x</td>
-<th>x</td>
-<th>x</td>
+<th>Full-Featured Bernina Sewing Machine (Value Model) </td>
+<th>Classic 8mm Bolex Movie Camera</td>
+<th>Same Bolex showing four lenses</td>
 </tr>
 
 <tr>
@@ -55,9 +55,9 @@
 
 <table>
 <tr>
-<th>x</td>
-<th>x</td>
-<th>x</td>
+<th>Original Box for Bolex</td>
+<th>Yamaha Cassette Player (Part of Component Set)</td>
+<th>Antique Corn Planter (Really old)</td>
 </tr>
   
 <tr>
@@ -84,9 +84,9 @@
 
 <table>
 <tr>
-<th>x</td>
-<th>x</td>
-<th>x</td>
+<th>Portrait of Euphamia Strandjord (I Think)</td>
+<th>Techniques Classic TUrntable with Audio Technica Cartridge</td>
+<th>Workmate Woodworking Stand</td>
 </tr>
 
 <td valign="top">
