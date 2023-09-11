@@ -113,7 +113,7 @@
 <table>
 
 <tr>
-<th>Mac Pro - Core duo</br> New battery</br>As new, no trashware</br>Good for email and web)</td>
+<th>Mac Pro - Core Duo</br> New battery</br>Clean HD + MSOFFICE</br>Good for email and web)</td>
 <th>Yamaha Receiver (part of set)</td>
 <th>Shop Vac</td>
 </tr>
@@ -170,7 +170,7 @@
 
 <table>
 <tr>
-<th>Speakers - Klipsh Forte  </br>MellowClassical Music, on left)</br></br>Classic Pioneer HPM 100 </br>Google Them!</br>(Crisp -- Rock, etc. on  right)</td>
+<th>Speakers - Klipsh Forte  </br>Mellow -- Classical Music, on left)</br></br>Classic Pioneer HPM 100 </br>Google Them!</br>(Crisp -- Rock, etc. on  right)</td>
 <th>Lenovo T510 Busines Class Laptop</br> (As new - Clean)</td>
 <th>Table Saw (Recently refurbished)</td>
 </table>tr>
@@ -199,7 +199,7 @@
 <tr>
 <th>Celeston Refracting Telescope</td>
 <th>CraftsMan Tool Chest</td>
-<th>Restored Marx HO Train</th>br>Rare Classic with Extra Track, etc.)</td>
+<th>Restored Marx HO Train</br>Rare Classic with Extra Track, etc.)</td>
 </tr>
 
 <tr>
