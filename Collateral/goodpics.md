@@ -152,16 +152,7 @@
 </a>
 </td>
 </tr>
-</table>
 
-<table>
-<tr>
-<th>x</td>
-<th>x</td>
-<th>x</td>
-</tr>
-
-<tr>
 <td valign="top">
 <a href="./GoodPics/Singer.jpg">
 <img src="./GoodPics/ThumbNails/Singer.jpg">
@@ -173,6 +164,15 @@
 <img src="./GoodPics/ThumbNails/Sony-CD.jpg">
 </a>
 </td>
+</tr>
+</table>
+
+<table>
+<tr>
+<th>Speakers - Klipsh Forte (Mellow -- Classical Music, on left), Class Pioneer HPM 100 (Crisp -- Rock, etc. on  right)</td>
+<th>x</td>
+<th>x</td>
+</tr>
 
 <td valign="top">
 <a href="./GoodPics/Speakers.jpg">
@@ -180,21 +180,6 @@
 </a>
 </td>
 </tr>
-</table>
-
-<table>
-<tr>
-<th>x</td>
-<th>x</td>
-<th>x</td>
-</tr>
-
-<tr>
-<td valign="top">
-<a href="./GoodPics/Stero.jpg">
-<img src="./GoodPics/ThumbNails/Stero.jpg">
-</a>
-</td>
 
 <td valign="top">
 <a href="./GoodPics/T510.jpg">
