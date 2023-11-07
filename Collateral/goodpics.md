@@ -85,23 +85,14 @@
 <table>
 <tr>
 <th>Portrait of Euphamia Strandjord (I Think)</td>
-
-<th>Workmate Woodworking Stand</td>
 </tr>
-
+  <tr>
 <td valign="top">
 <a href="./GoodPics/Euphamia.jpg">
 <img src="./GoodPics/ThumbNails/Euphamia.jpg">
 </a>
 </td>
-
-<td valign="top">
-<a href="./GoodPics/Workmate.jpg">
-<img src="./GoodPics/ThumbNails/Workmate.jpg">
-</a>
-</td>
 </tr>
-
 </table>
 
 <table>
@@ -135,17 +126,13 @@
 
 <table>
 <tr>
-<th>Navajo Rug (Two Hills)</td>
+
 <th>Singer Featherweight (Restored)</td>
   <th>Sony 5 disk CD Player</th>
 </tr>
 
 <tr>
-<td valign="top">
-<a href="./GoodPics/rug.jpg">
-<img src="./GoodPics/ThumbNails/rug.jpg">
-</a>
-</td>
+
 
 <td valign="top">
 <a href="./GoodPics/Singer.jpg">
@@ -192,7 +179,6 @@
 <table>
 <tr>
 <th>Celeston Refracting Telescope</td>
-<th>CraftsMan Tool Chest</td>
 <th>Restored Marx HO Train</br>Rare Classic with Extra Track, etc.)</td>
 </tr>
 <tr>  
@@ -202,39 +188,7 @@
 </a>
 </td>
 
-<td valign="top">
-<a href="./GoodPics/Tool-Cabinet-1.jpg">
-<img src="./GoodPics/ThumbNails/Tool-Cabinet-1.jpg">
-</a>
-</td>
-
-<td valign="top">
-<a href="./GoodPics/Train.jpg">
-<img src="./GoodPics/ThumbNails/Train.jpg">
-</a>
-</td>
-</tr>
 
 </table>
 
-<table>
-<tr>
-<th>Acessories for Acetaline Torch</td>
-<th>Acetaline Torch with Owned Tanks</td>
-
-</tr>
-<td valign="top">
-<a href="./GoodPics/Torch-2.jpg">
-<img src="./GoodPics/ThumbNails/Torch-2.jpg">
-</a>
-</td>
-
-<td valign="top">
-<a href="./GoodPics/Torch.jpg">
-<img src="./GoodPics/ThumbNails/Torch.jpg">
-</a>
-</td>
-</tr>
-
-</table>
 
