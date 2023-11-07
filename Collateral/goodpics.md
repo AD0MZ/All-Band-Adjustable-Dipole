@@ -85,19 +85,13 @@
 <table>
 <tr>
 <th>Portrait of Euphamia Strandjord (I Think)</td>
-<th>Technics Classic Turntable </br>Audio Technica Cartridge</td>
+
 <th>Workmate Woodworking Stand</td>
 </tr>
 
 <td valign="top">
 <a href="./GoodPics/Euphamia.jpg">
 <img src="./GoodPics/ThumbNails/Euphamia.jpg">
-</a>
-</td>
-
-<td valign="top">
-<a href="./GoodPics/Turntable.jpg">
-<img src="./GoodPics/ThumbNails/Turntable.jpg">
 </a>
 </td>
 
@@ -170,7 +164,7 @@
 
 <table>
 <tr>
-<th>Speakers - Klipsh Forte  </br>Mellow -- Classical Music, on left)</br></br>Classic Pioneer HPM 100 </br>Google Them!</br>(Crisp -- Rock, etc. on  right)</td>
+<th>Speakers - Klipsh Forte  </br>Mellow -- Classical Music, on left)</br></br> Keeping the Classic Pioneer HPM 100's </br>Google Them!</br>(Crisp -- Rock, etc. on  right)</td>
 <th>Lenovo T510 Busines Class Laptop</br> (As new - Clean)</td>
 <th>Table Saw (Recently refurbished)</td>
 </table>tr>
